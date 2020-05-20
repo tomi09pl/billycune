@@ -1,3 +1,13 @@
+
+@import './settings/colors';
+@import './settings/fonts';
+
+body {
+  background: $color2;
+  font-family: $font-base;
+  font-size: 16px;
+}
+
 .App-header {
   font-size: 30px;
 }
