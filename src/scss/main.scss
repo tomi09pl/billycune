@@ -1,6 +1,8 @@
 
 @import './settings/colors';
 @import './settings/fonts';
+@import "./home.scss";
+@import "./navigationWithButton.scss";
 
 body {
   background: $color2;
