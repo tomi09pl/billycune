@@ -15,7 +15,7 @@ export default class Home extends React.Component {
                 <SlideShow/>
                 <About/>
                 <Gallery/>
-                <Order/>
+                {/*<Order/>*/}
                 <Contact/>
             </div>
         )
