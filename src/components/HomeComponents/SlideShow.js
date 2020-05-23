@@ -3,7 +3,7 @@ import React from 'react';
 export default class SlideShow extends React.Component {
     render() {
         return(
-            <div>Slide Show</div>
+            <div className="home-slide-show-container" id="slide-show">Slide Show</div>
         )
     }
 }
