@@ -7,3 +7,6 @@
 //         )
 //     }
 // }
+
+
+// na razie zakomentowalem bo widze ze to samo zrobiliscie wczesniej w zakladne "Contact"
