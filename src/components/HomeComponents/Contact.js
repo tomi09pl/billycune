@@ -124,28 +124,32 @@ export default class Contact extends React.Component{
                                 {(!this.state.messageSend && !this.state.fetchError) && <p/>}
                             </div>
                             <form onSubmit={this.handleSubmit}>
-                                <div className="formTop">
-                                    <label>
-                                        <p className="title">Name:</p>
-                                        <input className="formUp" type="text" name="name" placeholder="Krzysztof" onChange={this.handleChange} />
-                                        {(this.state.nameError)?<span>Podane imię jest nieprawidłowe!</span>:<span className='correct'/>}
-                                    </label>
-                                    <label>
-                                        <p className="title">Email:</p>
-                                        <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
-                                        {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
-                                    </label>
-                                    <label>
-                                        <p className="title">Art name / ID</p>
-                                        <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
-                                        {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
-                                    </label>
+                                <div className="formBox">
+                                    <div className="formLeft">
+                                        <label>
+                                            <p className="title">Name:</p>
+                                            <input className="formUp" type="text" name="name" placeholder="Krzysztof" onChange={this.handleChange} />
+                                            {(this.state.nameError)?<span>Podane imię jest nieprawidłowe!</span>:<span className='correct'/>}
+                                        </label>
+                                        <label>
+                                            <p className="title">Email:</p>
+                                            <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
+                                            {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
+                                        </label>
+                                        <label>
+                                            <p className="title">Art name / ID</p>
+                                            <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
+                                            {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
+                                        </label>
+                                    </div>
+                                    <div className="formRight">
+                                        <label className="formBottom">
+                                            <p className="title"> Wpisz swoją wiadomość:</p>
+                                            <textarea className="formMessage" name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum maxime perferendis rerum voluptas? Consectetur corporis incidunt non quis rem?"onChange={this.handleChange} />
+                                            {(this.state.messageError)?<span>Widomość musi miec  conajmniej 120 znaków!</span>:<span className='correct'/>}
+                                        </label>
+                                    </div>
                                 </div>
-                                <label className="formBottom">
-                                    <p className="title"> Wpisz swoją wiadomość:</p>
-                                    <textarea className="formMessage" name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum maxime perferendis rerum voluptas? Consectetur corporis incidunt non quis rem?"onChange={this.handleChange} />
-                                    {(this.state.messageError)?<span>Widomość musi miec  conajmniej 120 znaków!</span>:<span className='correct'/>}
-                                </label>
                                 <input className="sendButton" type="submit" value="Wyślij" />
                             </form>
                         </div>
