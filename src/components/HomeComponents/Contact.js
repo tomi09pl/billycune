@@ -137,10 +137,12 @@ export default class Contact extends React.Component{
                     </form>
                 </div>
                 <div className="contactFooter">
-                    <p>Copyrights by Coders Lab</p>
+                    <p>billycune.pl || 2020</p>
                     <div className="socialIcons">
+                        Talk to me on:
                         <div className="facebook"/>
                         <div className="instagram"/>
+                        <div>mail icon</div>
                     </div>
                 </div>
             </div>
