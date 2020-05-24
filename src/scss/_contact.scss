@@ -1,0 +1,166 @@
+
+
+
+.homeContact {
+  ////background-image: url("../../assets/Background-Contact-Form.jpg");
+  ////background-size: cover;
+  ////background-repeat: no-repeat;
+  ////background-position: top;
+  //width: calc(100vw - (100vw - 100%));
+  //height: 700px;
+  //position: relative;
+}
+
+.homeContact img {
+  //height: 100%;
+  //width: 100%;
+  //opacity: 0.2;
+}
+
+.contactForm {
+  //margin-top: 100px;
+  //height: 400px;
+  //width: 350px;
+  //position: absolute;
+  //right: 150px;
+  //top: 0;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-around;
+  //align-items: center;
+}
+
+.contactForm p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contactForm form {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 15px;
+  width: 400px;
+}
+
+.contactForm form input {
+  text-decoration: none;
+  background: none;
+  box-shadow: 0px 0px 0px transparent;
+  border: solid 1px black;
+  margin: 20px;
+  width: 100px;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+
+.contactForm form .title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contactForm form .formUp {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  border-bottom: solid 1px black;
+  width: 170px;
+  margin-top: 10px;
+}
+
+.formTop {
+  display: flex;
+  justify-content: space-between;
+  border-top: none;
+
+}
+
+
+.formBottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.formMessage {
+  height: 60px;
+  word-break: break-all;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  border-bottom: solid 1px black;
+  margin-top: 10px;
+
+}
+
+.sendButton {
+  width: 60px;
+  align-self: flex-end;
+}
+
+.contactFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 700px;
+  //position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.facebook {
+  background-image: url("../assets/Facebook.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.instagram {
+  background-image: url("../assets/Instagram.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+.messageSend {
+  p{
+    margin-top: 40px;
+    height:50px;
+    width: 300px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  p.send{
+    color: green;
+  }
+  p.error{
+    color: red;
+  }
+}
+
+form span{
+  display: block;
+  font-size: 0.7rem;
+  color: red;
+  //border-top: 1px solid red;
+  width: 100%;
+}
+form span.correct{
+  width:100%;
+  //border-top: 1px solid green;
+}
