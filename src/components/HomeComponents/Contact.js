@@ -16,6 +16,7 @@ export default class Contact extends React.Component{
     state={
         name:'',
         email:'',
+        id: '',
         message:'',
 
         nameError:false,
@@ -102,7 +103,7 @@ export default class Contact extends React.Component{
         return (
             <div className="home-contact-container" id="contact">
                 <div className="contactForm">
-                    <p>Skontaktuj się z nami</p>
+                    <p>Contact form</p>
                     <div className="contactDecoration" />
                     <div className='messageSend'>
                         {this.state.messageSend && <p className='send'>Wiadomość została wysłana!<br/>Wkrótce się skonatktujemy.</p>}
@@ -112,12 +113,17 @@ export default class Contact extends React.Component{
                     <form onSubmit={this.handleSubmit}>
                         <div className="formTop">
                             <label>
-                                <p className="title">Wpisz swoje imię:</p>
+                                <p className="title">Name:</p>
                                 <input className="formUp" type="text" name="name" placeholder="Krzysztof" onChange={this.handleChange} />
                                 {(this.state.nameError)?<span>Podane imię jest nieprawidłowe!</span>:<span className='correct'/>}
                             </label>
                             <label>
-                                <p className="title">Wpisz swój email:</p>
+                                <p className="title">Email:</p>
+                                <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
+                                {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
+                            </label>
+                            <label>
+                                <p className="title">Art name / ID</p>
                                 <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
                                 {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
                             </label>
