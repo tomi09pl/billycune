@@ -1,45 +1,52 @@
 
 
-
-.homeContact {
-  ////background-image: url("../../assets/Background-Contact-Form.jpg");
-  ////background-size: cover;
-  ////background-repeat: no-repeat;
-  ////background-position: top;
-  //width: calc(100vw - (100vw - 100%));
-  //height: 700px;
-  //position: relative;
+.home-contact-container h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 350px;
 }
 
-.homeContact img {
-  //height: 100%;
-  //width: 100%;
-  //opacity: 0.2;
+.howToOrder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: calc(100vw - (100vw - 100%));
+}
+
+.howToOrder .boxes {
+  display: flex;
+}
+
+.aboutText {
+  width: 45%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .contactForm {
-  //margin-top: 100px;
-  //height: 400px;
-  //width: 350px;
-  //position: absolute;
-  //right: 150px;
-  //top: 0;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: space-around;
-  //align-items: center;
+  width: 35%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.contactForm p {
-  font-size: 28px;
-  font-weight: bold;
+.contactFooter {
+  width: calc(100vw - (100vw - 100%));
+}
+
+.contactFooter p {
+  width: 100%;
+}
+
+.contactFooter .socialIcons {
+
 }
 
 .contactForm form {
-  height: 200px;
+  height: 70%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   font-size: 15px;
   width: 400px;
 }
@@ -49,8 +56,8 @@
   background: none;
   box-shadow: 0px 0px 0px transparent;
   border: solid 1px black;
-  margin: 20px;
-  width: 100px;
+  //margin: 20px;
+  //width: 100px;
   text-shadow: 0px 0px 0px transparent;
 }
 
@@ -66,14 +73,14 @@
   border-right: none;
   background: none;
   border-bottom: solid 1px black;
-  width: 170px;
-  margin-top: 10px;
+  //width: 170px;
+  margin-top: 0px;
 }
 
 .formTop {
-  display: flex;
-  justify-content: space-between;
-  border-top: none;
+  //display: flex;
+  //justify-content: space-between;
+  //border-top: none;
 
 }
 
@@ -81,7 +88,7 @@
 .formBottom {
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  //margin-top: 10px;
 }
 
 .formMessage {

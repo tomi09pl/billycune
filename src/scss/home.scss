@@ -23,4 +23,8 @@
 .home-contact-container {
   background-color: $color4;
   height: 90vh;
+  width: calc(100vw - (100vw - 100%));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
