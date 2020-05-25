@@ -1,0 +1,177 @@
+
+
+.home-contact-container h2 {
+  border-bottom: 1px solid black;
+  text-align: center;
+  width: 350px;
+}
+
+.howToOrder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90vh;
+  width: calc(100vw - (100vw - 100%));
+}
+
+.howToOrder .boxes {
+  display: flex;
+}
+
+.aboutText {
+  width: 45%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.contactForm {
+  width: 35%;
+  height: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.formBox {
+  display: flex;
+  width: 100%;
+}
+
+
+.formBox .formLeft {
+  width: 40%;
+  padding: 5%;
+}
+
+.formBox .formRight {
+  width: 60%;
+  padding: 5%;
+  padding-left: 10%;
+}
+
+.formBottom {
+  height: 100%;
+}
+
+.contactForm form {
+  font-size: 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactForm form label {
+  width: 100%;
+}
+
+.contactForm form input {
+  text-decoration: none;
+  background: none;
+  box-shadow: 0px 0px 0px transparent;
+  border: solid 1px black;
+  //margin: 20px;
+  //width: 80%;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+
+.contactForm form .title {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contactForm form .formUp {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  border-bottom: solid 1px black;
+  //width: 170px;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.formMessage {
+  word-break: break-all;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: none;
+  border-bottom: solid 1px black;
+  margin-top: 10px;
+  width: 100%;
+  height: 50%;
+}
+
+.sendButton {
+  width: 60px;
+  align-self: center;
+}
+
+.contactFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100vw - (100vw - 100%));
+  //position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.socialIcons {
+  display: flex;
+}
+
+.facebook {
+  background-image: url("../assets/Facebook.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+}
+
+.instagram {
+  background-image: url("../assets/Instagram.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 30px;
+  height: 30px;
+  align-self: flex-end;
+  margin-left: 20px;
+}
+
+.messageSend {
+  p{
+    //margin-top: 40px;
+    //height:50px;
+    //width: 300px;
+    //text-align: center;
+    //font-weight: bold;
+    //font-size: 15px;
+  }
+  p.send{
+    color: green;
+  }
+  p.error{
+    color: red;
+  }
+}
+
+form span{
+  display: block;
+  font-size: 0.7rem;
+  color: red;
+  //border-top: 1px solid red;
+  width: 100%;
+}
+form span.correct{
+  width:100%;
+  //border-top: 1px solid green;
+}
