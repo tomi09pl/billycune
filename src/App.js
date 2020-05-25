@@ -19,7 +19,6 @@ function App() {
                         <Button />
                     </div>
                 </header>
-                {/*<Nav /> TUTAJ BEDZIE MOZNA RENDEROWAC KOMPONENT ZAWIERAJACY NAWIGACJE/MENU */}
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route path="/portfolio" component={Portfolio}/>
