@@ -1,9 +1,7 @@
 
 @import './settings/colors';
 @import './settings/fonts';
-@import "./home.scss";
-@import "./navigationWithButton.scss";
-@import "./contact";
+
 
 body {
   background: $color2;
@@ -14,3 +12,8 @@ body {
 .App-header {
   font-size: 30px;
 }
+
+@import "home";
+@import "navigationWithButton";
+@import "contact";
+@import "SlideShow";
