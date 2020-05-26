@@ -9,8 +9,15 @@ body {
   font-size: 16px;
 }
 
-.App-header {
-  font-size: 30px;
+.page-header {
+  background: linear-gradient($color4, $color2);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
 @import "home";
