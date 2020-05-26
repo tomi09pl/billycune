@@ -1,0 +1,13 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.portfolio-nav-list {
+  color: #eaf4ec;
+  display: flex;
+}
+.portfolio-nav-list-link {
+  margin: 10px;
+  cursor: pointer;
+  height: 90vh;
+  width: 90%;
+  background-color: #3D348B;
+}
