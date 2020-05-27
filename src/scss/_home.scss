@@ -2,6 +2,26 @@
 
 .home-nav-list {
   color: $color4;
+  position: fixed;
+  height: 20px;
+  width: 210px;
+  padding: 10px;
+  background-color: rgba(76, 95, 103, 0.3);
+  z-index: 9999;
+  margin-left: 3vw;
+}
+@media (max-width: 780px) {
+  .home-nav-list {
+    color: $color4;
+    position: fixed;
+    height: 20px;
+    width: 210px;
+    padding: 10px;
+    background-color: rgba(76, 95, 103, 0);
+    z-index: 9999;
+    margin-left: 80px;
+    margin-top: -60px;
+  }
 }
 .home-nav-list-link {
   margin: 10px;
