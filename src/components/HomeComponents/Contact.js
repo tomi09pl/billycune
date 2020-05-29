@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 export default class Contact extends React.Component{
     state={
         name:'',
@@ -92,17 +91,17 @@ export default class Contact extends React.Component{
         return (
             <div className="home-contact-container" id="contact">
                 <div className="howToOrder">
-                    <h2>HOW TO ORDER ART</h2>
+                    <h1>HOW TO ORDER ART</h1>
                     <div className="boxes">
                         <div className="aboutText">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores beatae doloremque eius eos eveniet excepturi facilis fugit impedit labore molestias praesentium provident quasi quo, rem tempore voluptate. Magni, molestias!
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores beatae doloremque eius eos eveniet excepturi facilis fugit impedit labore molestias praesentium provident quasi quo, rem tempore voluptate. Magni, molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptates.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis laudantium, ut. Ab nesciunt obcaecati officiis tempora veritatis vero! Fuga, inventore.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis laudantium, ut. Ab nesciunt obcaecati officiis tempora veritatis vero! Fuga, inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, molestiae! Lorem ipsum dolor sit amet.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum suscipit veniam. Aperiam doloremque labore quam recusandae tempora vero voluptatibus.
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum suscipit veniam. Aperiam doloremque labore quam recusandae tempora vero voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, voluptas!
                             </p>
                         </div>
                         <div className="contactForm">
@@ -117,29 +116,37 @@ export default class Contact extends React.Component{
                                     <div className="formLeft">
                                         <label>
                                             <p className="title">Name:</p>
-                                            <input className="formUp" type="text" name="name" placeholder="Krzysztof" onChange={this.handleChange} />
-                                            {(this.state.nameError)?<span>Podane imię jest nieprawidłowe!</span>:<span className='correct'/>}
+                                            <input className="formUp" type="text" name="name" placeholder="John Psikuta" onChange={this.handleChange} />
+                                            {(this.state.nameError)?<span>Incorrect name!</span>:<span className='correct'/>}
                                         </label>
                                         <label>
                                             <p className="title">Email:</p>
                                             <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
-                                            {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
+                                            {(this.state.emailError)?<span>Incorrect email!</span>:<span className='correct'/>}
                                         </label>
                                         <label>
                                             <p className="title">Art name / ID</p>
-                                            <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
-                                            {(this.state.emailError)?<span>Podany email jest nieprawidłowy!</span>:<span className='correct'/>}
+                                            <input className="formUp" type="text" name="id" placeholder="1234" onChange={this.handleChange} />
+                                            {(this.state.emailError)?<span>Incorrect ID!</span>:<span className='correct'/>}
                                         </label>
                                     </div>
                                     <div className="formRight">
                                         <label className="formBottom">
-                                            <p className="title"> Wpisz swoją wiadomość:</p>
-                                            <textarea className="formMessage" name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum maxime perferendis rerum voluptas? Consectetur corporis incidunt non quis rem?"onChange={this.handleChange} />
-                                            {(this.state.messageError)?<span>Widomość musi miec  conajmniej 120 znaków!</span>:<span className='correct'/>}
+                                            <p className="title"> Your message:</p>
+                                            <textarea className="formMessage" name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum maxime perferendis rerum voluptas? Consectetur corporis incidunt non quis rem? "onChange={this.handleChange} />
+                                            {(this.state.messageError)?<span>Message too short!</span>:<span className='correct'/>}
+                                            <div className="check1">
+                                                <input type="checkbox" id="terms" name="terms" value="terms"/>
+                                                <label htmlFor="terms"> I agree with terms and conditions</label>
+                                            </div>
+                                            <div className="check2">
+                                                <input type="checkbox" id="news" name="news" value="news"/>
+                                                <label htmlFor="news"> I want to receive news from website</label>
+                                            </div>
                                         </label>
                                     </div>
                                 </div>
-                                <input className="sendButton" type="submit" value="Wyślij" />
+                                <input className="sendButton" type="submit" value="Send" />
                             </form>
                         </div>
                     </div>
