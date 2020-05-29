@@ -1,16 +1,5 @@
 import React from 'react';
 
-// export default class Contact extends React.Component {
-//     render() {
-//         return(
-//             <div className="home-contact-container" id="contact">How to order art + Contact Form
-//
-//
-//             </div>
-//         )
-//     }
-// }
-
 
 export default class Contact extends React.Component{
     state={
@@ -154,17 +143,6 @@ export default class Contact extends React.Component{
                             </form>
                         </div>
                     </div>
-                </div>
-
-                {/* ---------------  FOOTER -----------------  */}
-                <div className="contactFooter">
-                    <div className="socialIcons">
-                        Talk to me on:
-                        <div className="facebook"/>
-                        <div className="instagram"/>
-                        <div>mail icon</div>
-                    </div>
-                    <p>billycune.pl || 2020</p>
                 </div>
             </div>
 
