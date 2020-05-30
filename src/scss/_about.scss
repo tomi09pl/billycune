@@ -1,0 +1,45 @@
+
+
+.home-about-us-container {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #453b3b;
+
+  h1 {
+    border-bottom: 1px solid white;
+    font-family: $font-base;
+    text-align: center;
+    align-self: center;
+    width: 350px;
+    //margin-bottom: 30px;
+    color: #b8aeae;
+  }
+
+  .main {
+    display: flex;
+    height: 100%;
+
+    .left {
+      width: 60%;
+      height: 100%;
+      padding-left: 2%;
+
+      img {
+        height: 80%;
+        width: 80%;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+      .right {
+        width: 40%;
+        height: 100%;
+      }
+
+
+    }
+
+  }
+
+}
