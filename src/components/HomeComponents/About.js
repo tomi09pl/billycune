@@ -11,7 +11,7 @@ export default class About extends React.Component {
                 <h1>HOW TO ORDER ART</h1>
                 <div className="main">
                     <div className="left">
-                        <img src={Image}/>
+                        <img src={Image} alt='knuckle engine'/>
                     </div>
                     <div className="right">
                         <div className="text">
