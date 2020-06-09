@@ -8,6 +8,7 @@ import HistoryHD from "./components/HistoryHD";
 import NotFound from "./components/NotFound";
 import Navigation from "./components/Navigation";
 import Button from "./components/MobileButton";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -26,7 +27,7 @@ function App() {
                     <Route path="/history" component={HistoryHD}/>
                     <Route component={NotFound}/>
                 </Switch>
-                {/*<Footer />  TUTAJ BEDZIE MOZNA RENDEROWAC STOPKE */}
+                <Footer />
             </Router>
         </div>
     );

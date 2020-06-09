@@ -1,38 +1,47 @@
 
+.home-contact-container {
+  height: 80vh;
+  background-color: #453b3b;
+}
 
-.home-contact-container h2 {
+.home-contact-container h1 {
   border-bottom: 1px solid black;
   text-align: center;
   width: 350px;
+  margin-bottom: 30px;
 }
 
 .howToOrder {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90vh;
   width: calc(100vw - (100vw - 100%));
 }
 
 .howToOrder .boxes {
   display: flex;
+  height: 100%;
 }
 
 .aboutText {
   width: 45%;
   padding-left: 5%;
   padding-right: 5%;
+  color: #9a9090;
+  font-size: 20px;
 }
 
 .contactForm {
   width: 35%;
   height: 100%;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+  background-color: #C4C4C4;
 }
 
 .formBox {
@@ -44,12 +53,18 @@
 .formBox .formLeft {
   width: 40%;
   padding: 5%;
+  padding-left: 8%;
 }
 
 .formBox .formRight {
   width: 60%;
   padding: 5%;
-  padding-left: 10%;
+  padding-left: 5%;
+  padding-right: 8%;
+  .check1, .check2 {
+    font-size: 11px;
+    margin-top: 2px;
+  }
 }
 
 .formBottom {
@@ -62,6 +77,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 10%;
+  margin-top: -20px;
 }
 
 .contactForm form label {
@@ -113,17 +130,29 @@
 }
 
 .contactFooter {
+  background-color: #c4c4c4;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   width: calc(100vw - (100vw - 100%));
-  //position: absolute;
-  bottom: 0;
-  right: 100px;
+  height: 10vh;
+  .box1, .box3 {
+    width: 40%;
+  }
+  h3 {
+    margin-right: 10px;
+  }
 }
 
 .socialIcons {
+  width: 50%;
   display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.react-icons {
+  height: 50px;
+  width: 50px;
 }
 
 .facebook {
@@ -131,9 +160,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 30px;
-  align-self: flex-end;
+  width: 28px;
+  height: 28px;
 }
 
 .instagram {
@@ -141,10 +169,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 30px;
-  height: 30px;
-  align-self: flex-end;
-  margin-left: 20px;
+  width: 28px;
+  height: 28px;
 }
 
 .messageSend {

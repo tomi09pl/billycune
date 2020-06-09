@@ -5,7 +5,6 @@ import About from "./HomeComponents/About";
 import Contact from "./HomeComponents/Contact";
 import Gallery from "./HomeComponents/Gallery";
 import SlideShow from "./HomeComponents/SlideShow";
-import Order from "./HomeComponents/HowToOrder";
 
 export default class Home extends React.Component {
     render() {
@@ -15,7 +14,6 @@ export default class Home extends React.Component {
                 <SlideShow/>
                 <About/>
                 <Gallery/>
-                {/*<Order/>*/}
                 <Contact/>
             </div>
         )
