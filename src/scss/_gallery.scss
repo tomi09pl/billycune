@@ -2,7 +2,7 @@
 @import "settings/fonts";
 
 .desc {
-  display: none;
+  //display: none;
   padding: 15px;
   text-align: center;
 }
@@ -28,6 +28,12 @@
   justify-content: space-around;
 }
 
+.galleryHeader {
+  color:  #b8aeae;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .home-gallery-container {
   background-color: $color3;
   color: $color4;
@@ -44,6 +50,8 @@
 }
 
 .responsive {
+  display: flex;
+  justify-content: center;
   padding: 0 6px;
   float: left;
   width: 24.99999%;

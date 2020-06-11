@@ -8,7 +8,7 @@ export default class About extends React.Component {
     render() {
         return(
             <div className="home-about-us-container" id="about-us">
-                <h1>HOW TO ORDER ART</h1>
+                <h1>about art & me</h1>
                 <div className="main">
                     <div className="left">
                         <img src={Image} alt='knuckle engine'/>

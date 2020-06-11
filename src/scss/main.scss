@@ -9,7 +9,10 @@ body {
 }
 
 .page-header {
-  background: linear-gradient($color4, $color2);
+  background: $color2;
+  // background-image: url('../assets/nav_bckgnd.jpg');
+  // background-size: contain;
+  // background-repeat: repeat;
   padding: 10px;
   display: flex;
   justify-content: space-between;
@@ -19,6 +22,11 @@ body {
   z-index: 9999;
 }
 
+.header-signature {
+  width: auto;
+  height: 45px;
+}
+
 @import "home";
 @import "navigationWithButton";
 @import "contact";
@@ -26,3 +34,4 @@ body {
 @import "about";
 @import "portfolio";
 @import "gallery";
+@import "footer";

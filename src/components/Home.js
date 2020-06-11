@@ -6,14 +6,18 @@ import Contact from "./HomeComponents/Contact";
 import Gallery from "./HomeComponents/Gallery";
 import SlideShow from "./HomeComponents/SlideShow";
 
+import SimpleReactLightbox from "simple-react-lightbox";
+
 export default class Home extends React.Component {
     render() {
         return(
             <div>
                 <HomeNavigation/>
                 <SlideShow/>
-                <About/>
-                <Gallery/>
+                <SimpleReactLightbox>
+                    <Gallery/>
+                </SimpleReactLightbox>
+                <About/>                
                 <Contact/>
             </div>
         )
