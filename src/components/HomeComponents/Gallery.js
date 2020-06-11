@@ -1,5 +1,6 @@
 import React from 'react';
 import {SRLWrapper} from 'simple-react-lightbox';
+import Divider from '../Divider';
 
 import img1 from '../../assets/black/Atmosferic Twin.jpg';
 import img2 from '../../assets/black/Evolution.jpg';
@@ -10,13 +11,39 @@ import img6 from '../../assets/classic/Knucklehead.jpg';
 import img7 from '../../assets/classic/Panhead S_S.jpg';
 import img8 from '../../assets/classic/Twin Cam.jpg';
 
+
 export default class Gallery extends React.Component {
 
     render() {
+        const callbacks = {
+            onLightboxOpened: object => console.log(object),
+            onLightboxClosed: object => console.log(object)
+          }
+
+        const options = {
+            buttons: {
+              showAutoplayButton: true,
+              showCloseButton: true,
+              showDownloadButton: false,
+              showFullscreenButton: true,
+              showNextButton: true,
+              showPrevButton: true,
+              showThumbnailsButton: false
+            },
+            settings: {
+                autoplaySpeed: 3000,
+                disableKeyboardControls: false,
+                disablePanzoom: false,
+                disableWheelControls: false
+              }
+        }
+
         return (
             <div className="home-gallery-container" id="gallery">
-                <SRLWrapper>
+                <SRLWrapper callbacks={callbacks} options={options}>
                 <h1 className='galleryHeader'>latest work</h1>
+                <Divider/>
+
                 <div className="firstRow galleryRow">
                     <div className="responsive">
                         <div className="gallery">

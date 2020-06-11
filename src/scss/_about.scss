@@ -6,14 +6,21 @@
   flex-direction: column;
   background-color: #453b3b;
 
+  & .divider {
+    margin-bottom: 30px;
+  }
+
   h1 {
-    border-bottom: 1px solid white;
-    font-family: $font-base;
+    // border-bottom: 1px solid white;
+    font-weight: 300;
+    letter-spacing: 0.075em;
+    line-height: 50px;
     text-align: center;
     text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
     align-self: center;
     width: 350px;
-    //margin-bottom: 30px;
+    margin-bottom: 0.1em;
     color: #b8aeae;
   }
 

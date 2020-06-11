@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from "react-scroll";
 import {NavLink} from "react-router-dom";
 import Image from "../../assets/KNUCKLE_web.jpg";
+import Divider from '../Divider';
 
 
 export default class About extends React.Component {
@@ -9,6 +10,7 @@ export default class About extends React.Component {
         return(
             <div className="home-about-us-container" id="about-us">
                 <h1>about art & me</h1>
+                <Divider />
                 <div className="main">
                     <div className="left">
                         <img src={Image} alt='knuckle engine'/>

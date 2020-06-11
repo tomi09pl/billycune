@@ -29,9 +29,14 @@
 }
 
 .galleryHeader {
-  color:  #b8aeae;
+  color:  $color10;
+  font-weight: 300;
+  letter-spacing: 0.075em;
+  line-height: 50px;
   text-align: center;
   text-transform: uppercase;
+  text-shadow: 1px 1px 5px black;
+  margin-bottom: 0.1em;
 }
 
 .home-gallery-container {
