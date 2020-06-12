@@ -18,8 +18,8 @@ export default class Footer extends React.Component {
                             <a href="https://www.instagram.com/billycuneart/" target='_blank' rel="noopener noreferrer">
                                 <div className="instagram"/>
                             </a>
-                            <a target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=youremail@gmail.com&body=my-text" rel="noopener noreferrer">
-                            <AiOutlineMail size={36}/>
+                            <a className='mail-footer' target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=youremail@gmail.com&body=my-text" rel="noopener noreferrer">
+                            <AiOutlineMail size={28}/>
                             </a>
 
                         </div>

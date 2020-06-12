@@ -22,10 +22,10 @@ export default class Gallery extends React.Component {
 
         const options = {
             buttons: {
-              showAutoplayButton: true,
-              showCloseButton: true,
+              showAutoplayButton: false,
+              showCloseButton: false,
               showDownloadButton: false,
-              showFullscreenButton: true,
+              showFullscreenButton: false,
               showNextButton: true,
               showPrevButton: true,
               showThumbnailsButton: false
@@ -34,7 +34,7 @@ export default class Gallery extends React.Component {
                 autoplaySpeed: 3000,
                 disableKeyboardControls: false,
                 disablePanzoom: false,
-                disableWheelControls: false
+                disableWheelControls: true
               }
         }
 
