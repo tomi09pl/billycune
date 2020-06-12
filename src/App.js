@@ -1,5 +1,6 @@
 import React from 'react';
-import {HashRouter as Router, Switch,Route} from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import signature from './assets/billyCuneSignature.gif';
 
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
@@ -14,18 +15,30 @@ function App() {
     return (
         <div>
             <Router>
+
                 <header className="page-header">
+
                     <div className="main-nav">
-                        <Navigation/>
+                        <Navigation />
                         <Button />
                     </div>
+                    <div className='main-nav-right'>
+                        <img className='header-signature' src={signature} alt='signature' />
+                        <a href="https://www.facebook.com/hadrian.cone" target='_blank' rel="noopener noreferrer">
+                            <div className="facebook" />
+                        </a>
+                        <a href="https://www.instagram.com/billycuneart/" target='_blank' rel="noopener noreferrer">
+                            <div className="instagram" />
+                        </a>
+                    </div>
                 </header>
+
                 <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route path="/portfolio" component={Portfolio}/>
-                    <Route path="/makingof" component={MakingOf}/>
-                    <Route path="/history" component={HistoryHD}/>
-                    <Route component={NotFound}/>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/portfolio" component={Portfolio} />
+                    <Route path="/makingof" component={MakingOf} />
+                    <Route path="/history" component={HistoryHD} />
+                    <Route component={NotFound} />
                 </Switch>
                 <Footer />
             </Router>
