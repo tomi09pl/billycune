@@ -2,14 +2,14 @@ import React from 'react';
 import {SRLWrapper} from 'simple-react-lightbox';
 import Divider from '../Divider';
 
-import img1 from '../../assets/black/Atmosferic Twin.jpg';
+import img1 from '../../assets/black/AtmosfericTwin.jpg';
 import img2 from '../../assets/black/Evolution.jpg';
 import img3 from '../../assets/black/F-Head.jpg';
-import img4 from '../../assets/black/Generator Shovelhead.jpg';
+import img4 from '../../assets/black/GeneratorShovelhead.jpg';
 import img5 from '../../assets/classic/m8.jpg';
 import img6 from '../../assets/classic/Knucklehead.jpg';
-import img7 from '../../assets/classic/Panhead S_S.jpg';
-import img8 from '../../assets/classic/Twin Cam.jpg';
+import img7 from '../../assets/classic/PanheadS_S.jpg';
+import img8 from '../../assets/classic/TwinCam.jpg';
 
 
 export default class Gallery extends React.Component {
