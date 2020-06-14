@@ -7,6 +7,9 @@ import Divider from '../Divider';
 
 
 export default class About extends React.Component {
+    changeClick(e){
+        window.scrollTo(0, 0)
+    }
     render() {
         return(
             <div className="home-about-us-container" id="about-us">
@@ -33,7 +36,7 @@ export default class About extends React.Component {
                         </div>
 
                         <div className="buttons">
-                            <NavLink exact to="/portfolio">PORTFOLIO</NavLink>
+                            <NavLink onClick={e => this.changeClick(e)} exact to="/portfolio">PORTFOLIO</NavLink>
                             <Link
                                 activeClass="active"
                                 to="home-contact-container"
