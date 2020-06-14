@@ -1,4 +1,5 @@
 import React from 'react';
+import Divider from '../Divider';
 
 export default class Contact extends React.Component{
     state={
@@ -92,6 +93,7 @@ export default class Contact extends React.Component{
             <div className="home-contact-container" id="contact">
                 <div className="howToOrder">
                     <h1>HOW TO ORDER ART</h1>
+                    <Divider />
                     <div className="boxes">
                         <div className="aboutText">
                             <p>

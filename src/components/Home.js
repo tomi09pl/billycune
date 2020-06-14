@@ -5,6 +5,9 @@ import About from "./HomeComponents/About";
 import Contact from "./HomeComponents/Contact";
 import Gallery from "./HomeComponents/Gallery";
 import SlideShow from "./HomeComponents/SlideShow";
+import {ParallaxProvider} from 'react-scroll-parallax';
+
+import SimpleReactLightbox from "simple-react-lightbox";
 
 export default class Home extends React.Component {
     render() {
@@ -12,8 +15,12 @@ export default class Home extends React.Component {
             <div>
                 <HomeNavigation/>
                 <SlideShow/>
-                <About/>
-                <Gallery/>
+                <SimpleReactLightbox>
+                    <Gallery/>
+                </SimpleReactLightbox>
+                <ParallaxProvider>
+                    <About/>
+                </ParallaxProvider>                
                 <Contact/>
             </div>
         )
@@ -28,15 +35,6 @@ class HomeNavigation extends React.Component {
                 <ul className="home-nav-list" id="home-menu">
                     <Link
                         activeClass="active"
-                        to="about-us"
-                        spy={true}
-                        smooth={true}
-                        offset={-70}
-                        duration= {600}
-                        className="home-nav-list-link"
-                    >About</Link>
-                    <Link
-                        activeClass="active"
                         to="gallery"
                         spy={true}
                         smooth={true}
@@ -44,6 +42,15 @@ class HomeNavigation extends React.Component {
                         duration= {600}
                         className="home-nav-list-link"
                     >Gallery</Link>
+                    <Link
+                        activeClass="active"
+                        to="about-us"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration= {600}
+                        className="home-nav-list-link"
+                    >About</Link>
                     <Link
                         activeClass="active"
                         to="contact"

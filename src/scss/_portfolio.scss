@@ -1,13 +1,43 @@
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
+@import "settings/colors";
+
 
 .portfolio-nav-list {
   color: #eaf4ec;
   display: flex;
+  justify-content: center;
 }
 .portfolio-nav-list-link {
-  margin: 10px;
+  margin: 0 10px;
   cursor: pointer;
-  height: 90vh;
-  width: 90%;
-  background-color: #3D348B;
+  height: auto;
+  width: auto;
+  position: relative;
+}
+
+.classic{
+  &::before {
+    background-color: $color6;
+    color: $color4;
+    content: 'CLASSIC';
+    font-weight: 700;
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    padding:1.5% 44%
+  }
+}
+
+  .black{
+    &::before {
+      background-color: $color4;
+      color: $color6;
+      content: 'BLACK';
+      font-weight: 700;
+      position: absolute;
+      top:50%; left:50%;
+      transform: translate(-50%, -50%);
+      padding:1.5% 44%
+    }
+  
 }

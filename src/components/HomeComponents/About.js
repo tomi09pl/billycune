@@ -1,17 +1,30 @@
 import React from 'react';
 import {Link} from "react-scroll";
 import {NavLink} from "react-router-dom";
+import {ParallaxBanner} from 'react-scroll-parallax';
 import Image from "../../assets/KNUCKLE_web.jpg";
+import Divider from '../Divider';
 
 
 export default class About extends React.Component {
     render() {
         return(
             <div className="home-about-us-container" id="about-us">
-                <h1>HOW TO ORDER ART</h1>
+                <h1>about art & me</h1>
+                <Divider />
                 <div className="main">
                     <div className="left">
-                        <img src={Image} alt='knuckle engine'/>
+                        {/* <img src={Image} alt='knuckle engine'/> */}
+                        <ParallaxBanner
+                            className="section3-parallax"
+                            layers={[
+                                {image: Image, amount: 0.6},
+                                // {image: img2, amount: 0.2,}
+                                ]}
+                            style={{height: '95%'}}
+                        >
+
+                        </ParallaxBanner>
                     </div>
                     <div className="right">
                         <div className="text">
