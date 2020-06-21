@@ -169,6 +169,7 @@ class PortfolioNavigation extends React.Component {
 
     clickHandler = (e) => {
         this.setState({clickedGallery: e})
+        console.log(this.state.clickedGallery)
     }
 
     render() {

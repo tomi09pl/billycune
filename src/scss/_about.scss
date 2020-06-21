@@ -1,4 +1,4 @@
-
+@import 'settings/colors';
 
 .home-about-us-container {
   height: 90vh;
@@ -53,8 +53,8 @@
 
       .text {
         font-size: 20px;
-        width: 90%;
-        height: 100%;
+        width: 90%; height: 55%;
+        text-align: justify;        
       }
 
       .buttons {
@@ -63,20 +63,78 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        a{
-          color: black;
-          text-decoration: none;
-          border: black 1px solid;
-          background-color: #C4C4C4;
-          margin: 10px;
-          padding: 10px;
+        // a{
+        //   color: black;
+        //   text-decoration: none;
+        //   border: black 1px solid;
+        //   background-color: #C4C4C4;
+        //   margin: 10px;
+        //   padding: 10px;
+        // }
+
+        a:nth-child(1) {
+          right: 22%;
+        }
+        a:nth-child(2) {
+          right: 10%;
         }
 
-      
-        
+        a {
+          position: absolute;
+          padding: 15px 30px;
+          color: $color4;
+          text-decoration: none;
+          font-size: 24px;
+          overflow: hidden;
+          transition: 0.2s;
+          border: 2px solid transparent;
+          border-radius: 25px;
+        }
+        a:hover {
+          color: $color3;
+          background-color: $color4;
+          box-shadow: 0 0 5px $color4, 0 0 20px $color4, 0 0 45px $color4;
+          border: 2px solid white;
+          transition-delay: 0.4s;
+        }
+
+      a span {
+        position: absolute;
+      }
+
+      a span:nth-child(1) {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(90deg,rgba(255,0,0,0), $color4 100%);
+      }
+
+      a:hover span:nth-child(1) {
+        left: 100%;
+        transition: 1s;
+      }
+
+      a span:nth-child(2) {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background-image: linear-gradient(270deg, rgba(255,0,0,0), $color4 100%);
+      }
+
+      a:hover span:nth-child(2) {
+        right: 100%;
+        transition: 1s;
+      }
+  
       }
 
     }
   }
 
+}
+
+.parallax-banner-layer-0 {
+  inset: -35% 0px !important;
 }
