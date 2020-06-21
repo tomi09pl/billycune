@@ -136,5 +136,7 @@
 }
 
 .parallax-banner-layer-0 {
-  inset: -35% 0px !important;
+  // inset: -25% 0px !important;
+  top: -25% !important;
+  bottom: -25% !important;
 }
