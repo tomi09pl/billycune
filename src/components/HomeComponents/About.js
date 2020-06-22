@@ -51,7 +51,7 @@ export default class About extends React.Component {
                                 smooth={true}
                                 offset={-70}
                                 duration= {900}
-                                className="home-nav-list-link">
+                                className="">
                                     ORDER ART
                                     <span></span>
                                     <span></span>
