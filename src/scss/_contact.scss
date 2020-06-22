@@ -53,7 +53,14 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #C4C4C4;
+  background-color: #fff;
+  border-radius: 25px;
+  opacity: 50%;
+  box-shadow: 10px 10px 5px #aaaaaa
+}
+
+.contactForm:hover {
+  opacity: 90%;
 }
 
 .formBox {
@@ -79,9 +86,19 @@
   }
 }
 
+.contactForm h3 {
+  border-bottom: 3px black double;
+}
+
 .formBottom {
   height: 100%;
 }
+
+// .bike-icon {
+//   width: 100px;
+//   height: 100px;
+//   background-color: white;
+// }
 
 .contactForm form {
   font-size: 15px;
@@ -137,8 +154,16 @@
 }
 
 .sendButton {
-  width: 60px;
+  width: 100px;
   align-self: center;
+  border-radius: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.sendButton:hover{
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .messageSend {
