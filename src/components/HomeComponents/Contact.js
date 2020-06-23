@@ -11,6 +11,7 @@ export default class Contact extends React.Component{
 
         nameError:false,
         emailError:false,
+        idError: false,
         messageError:false,
 
         messageSend:false,
@@ -22,14 +23,14 @@ export default class Contact extends React.Component{
             [e.target.name]:e.target.value
         })
     };
-    sendForm=(name,email,message)=>{
+    sendForm=(name,email,id,message)=>{
         fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                name, email, message
+                name, email, id, message
             })
         })
             .then((data)=> {
@@ -47,6 +48,7 @@ export default class Contact extends React.Component{
         this.setState({messageSend:false});
         let name=this.state.name;
         let email=this.state.email;
+        let id=this.state.id;
         let message=this.state.message;
         let correctMessage=true;
 
@@ -55,6 +57,8 @@ export default class Contact extends React.Component{
         let emailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         let messageRegex=/^.{120,1000}$/;
+
+        let idRegex=/^.{120,1000}$/;
 
         console.log('Regex mail',emailRegex.test(email));
         console.log('Reg Name',nameRegex.test(name));
@@ -74,6 +78,13 @@ export default class Contact extends React.Component{
             this.setState({emailError:false});
         }
 
+        if (!idRegex.test(id)){
+            this.setState({idError:true});
+            correctMessage=false;
+        }else{
+            this.setState({idError:false});
+        }
+
         if (!messageRegex.test(message)){
             this.setState({messageError:true});
             correctMessage=false;
@@ -82,7 +93,7 @@ export default class Contact extends React.Component{
         }
 
         if (correctMessage){
-            this.sendForm(name,email,message);
+            this.sendForm(name,email,id,message);
         }
 
 
