@@ -23,8 +23,10 @@ export default class Contact extends React.Component{
             [e.target.name]:e.target.value
         })
     };
+
     sendForm=(name,email,id,message)=>{
-        fetch("https://fer-api.coderslab.pl/v1/portfolio/contact", {
+        // fetch(`https://billycune.pl/index.php?name=${name}&email=${email}&message=${message}`, {
+        fetch("https://billycune.pl/index.php", {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
@@ -56,9 +58,9 @@ export default class Contact extends React.Component{
 
         let emailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-        let messageRegex=/^.{120,1000}$/;
+        let messageRegex=/^.{5,1000}$/;
 
-        let idRegex=/^.{120,1000}$/;
+        let idRegex=/^.{5,50}$/;
 
         console.log('Regex mail',emailRegex.test(email));
         console.log('Reg Name',nameRegex.test(name));
