@@ -1,5 +1,6 @@
 import React from 'react';
 import Divider from '../Divider';
+import {bike} from '../../assets/bike-icon.png';
 
 export default class Contact extends React.Component{
     state={
@@ -93,6 +94,7 @@ export default class Contact extends React.Component{
             <div className="home-contact-container" id="contact">
                 <div className="howToOrder">
                     <h1>HOW TO ORDER ART</h1>
+                    {/* <p className="bike-icon">{bike}</p> */}
                     <Divider />
                     <div className="boxes">
                         <div className="aboutText">
