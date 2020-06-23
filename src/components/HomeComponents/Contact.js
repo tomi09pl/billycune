@@ -1,5 +1,6 @@
 import React from 'react';
 import Divider from '../Divider';
+import {bike} from '../../assets/bike-icon.png';
 
 export default class Contact extends React.Component{
     state={
@@ -10,6 +11,7 @@ export default class Contact extends React.Component{
 
         nameError:false,
         emailError:false,
+        idError: false,
         messageError:false,
 
         messageSend:false,
@@ -21,7 +23,8 @@ export default class Contact extends React.Component{
             [e.target.name]:e.target.value
         })
     };
-    sendForm=(name,email,message)=>{
+
+    sendForm=(name,email,id,message)=>{
         // fetch(`https://billycune.pl/index.php?name=${name}&email=${email}&message=${message}`, {
         fetch("https://billycune.pl/index.php", {
             method: 'POST',
@@ -29,7 +32,7 @@ export default class Contact extends React.Component{
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                name, email, message
+                name, email, id, message
             })
         })
             .then((data)=> {
@@ -47,6 +50,7 @@ export default class Contact extends React.Component{
         this.setState({messageSend:false});
         let name=this.state.name;
         let email=this.state.email;
+        let id=this.state.id;
         let message=this.state.message;
         let correctMessage=true;
 
@@ -54,7 +58,9 @@ export default class Contact extends React.Component{
 
         let emailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-        let messageRegex=/^.{2,1000}$/;
+        let messageRegex=/^.{5,1000}$/;
+
+        let idRegex=/^.{5,50}$/;
 
         console.log('Regex mail',emailRegex.test(email));
         console.log('Reg Name',nameRegex.test(name));
@@ -74,6 +80,13 @@ export default class Contact extends React.Component{
             this.setState({emailError:false});
         }
 
+        if (!idRegex.test(id)){
+            this.setState({idError:true});
+            correctMessage=false;
+        }else{
+            this.setState({idError:false});
+        }
+
         if (!messageRegex.test(message)){
             this.setState({messageError:true});
             correctMessage=false;
@@ -82,7 +95,7 @@ export default class Contact extends React.Component{
         }
 
         if (correctMessage){
-            this.sendForm(name,email,message);
+            this.sendForm(name,email,id,message);
         }
 
 
@@ -94,6 +107,7 @@ export default class Contact extends React.Component{
             <div className="home-contact-container" id="contact">
                 <div className="howToOrder">
                     <h1>HOW TO ORDER ART</h1>
+                    {/* <p className="bike-icon">{bike}</p> */}
                     <Divider />
                     <div className="boxes">
                         <div className="aboutText">
