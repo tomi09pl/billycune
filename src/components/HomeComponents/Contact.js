@@ -54,13 +54,13 @@ export default class Contact extends React.Component{
         let message=this.state.message;
         let correctMessage=true;
 
-        let nameRegex=/^[a-zA-Z]{1,200}$/;
+        let nameRegex=/^.{1,200}$/;
 
         let emailRegex= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
         let messageRegex=/^.{5,1000}$/;
 
-        let idRegex=/^.{5,50}$/;
+        let idRegex=/^.{5,200}$/;
 
         console.log('Regex mail',emailRegex.test(email));
         console.log('Reg Name',nameRegex.test(name));
