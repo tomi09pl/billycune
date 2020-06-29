@@ -1,6 +1,5 @@
 import React from 'react';
 import Divider from '../Divider';
-import {bike} from '../../assets/bike-icon.png';
 
 export default class Contact extends React.Component{
     state={
@@ -133,24 +132,24 @@ export default class Contact extends React.Component{
                                     <div className="formLeft">
                                         <label>
                                             <p className="title">Name:</p>
-                                            <input className="formUp" type="text" name="name" placeholder="John Psikuta" onChange={this.handleChange} />
+                                            <input className="formUp" type="text" name="name" placeholder="Your name..." onChange={this.handleChange} />
                                             {(this.state.nameError)?<span>Incorrect name!</span>:<span className='correct'/>}
                                         </label>
                                         <label>
                                             <p className="title">Email:</p>
-                                            <input className="formUp" type="text" name="email" placeholder="abc@xyz.pl" onChange={this.handleChange} />
+                                            <input className="formUp" type="text" name="email" placeholder="your@email.com" onChange={this.handleChange} />
                                             {(this.state.emailError)?<span>Incorrect email!</span>:<span className='correct'/>}
                                         </label>
                                         <label>
-                                            <p className="title">Art name / ID</p>
-                                            <input className="formUp" type="text" name="id" placeholder="1234" onChange={this.handleChange} />
+                                            <p className="title">Art name</p>
+                                            <input className="formUp" type="text" name="id" placeholder="Type in one or more..." onChange={this.handleChange} />
                                             {(this.state.emailError)?<span>Incorrect ID!</span>:<span className='correct'/>}
                                         </label>
                                     </div>
                                     <div className="formRight">
                                         <label className="formBottom">
                                             <p className="title"> Your message:</p>
-                                            <textarea className="formMessage" name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipisicing elit. A earum maxime perferendis rerum voluptas? Consectetur corporis incidunt non quis rem? "onChange={this.handleChange} />
+                                            <textarea className="formMessage" name="message" placeholder="Type your message here..."onChange={this.handleChange} />
                                             {(this.state.messageError)?<span>Message too short!</span>:<span className='correct'/>}
                                             <div className="check1">
                                                 <input type="checkbox" id="terms" name="terms" value="terms"/>

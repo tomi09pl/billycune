@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from "react-scroll";
 import {NavLink} from "react-router-dom";
-import {ParallaxBanner, Parallax} from 'react-scroll-parallax';
+import {ParallaxBanner} from 'react-scroll-parallax';
 import Image from "../../assets/KNUCKLE_web.jpg";
 import Image2 from '../../assets/about.jpg';
 import Image3 from '../../assets/about2.jpg';

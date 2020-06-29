@@ -53,14 +53,17 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  background-color: #fff;
-  border-radius: 25px;
-  opacity: 50%;
-  box-shadow: 10px 10px 5px #aaaaaa
+  background-color: $color2;
+  border-radius: 10px;
+  color: $color4;
+  // opacity: 50%;
+  // box-shadow: 10px 10px 5px #aaaaaa;
+  // box-shadow: 0 0 5px $color2, 0 0 20px $color2, 0 0 45px $color2;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
 }
 
 .contactForm:hover {
-  opacity: 90%;
+  // opacity: 90%;
 }
 
 .formBox {
@@ -87,7 +90,7 @@
 }
 
 .contactForm h3 {
-  border-bottom: 3px black double;
+  border-bottom: 3px black;
 }
 
 .formBottom {
@@ -106,7 +109,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
   margin-top: -20px;
 }
 
@@ -115,13 +118,10 @@
 }
 
 .contactForm form input {
-  text-decoration: none;
   background: none;
-  box-shadow: 0px 0px 0px transparent;
-  border: solid 1px black;
-  //margin: 20px;
-  //width: 80%;
-  text-shadow: 0px 0px 0px transparent;
+  border: solid 1px $color4;
+  transition: 0.3s;
+  padding: 5px;
 }
 
 
@@ -154,16 +154,20 @@
 }
 
 .sendButton {
+  color: $color4;
   width: 100px;
   align-self: center;
+  border-color: $color4;
   border-radius: 25px;
   font-size: 18px;
   text-transform: uppercase;
+
 }
 
 .sendButton:hover{
-  font-weight: bold;
+  color: $color3;
   cursor: pointer;
+  background-color: $color4;
 }
 
 .messageSend {
