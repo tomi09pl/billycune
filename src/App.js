@@ -24,12 +24,14 @@ function App() {
                     </div>
                     <div className='main-nav-right'>
                         <img className='header-signature' src={signature} alt='signature' />
+                        <div className="main-nav-social-wrapper">
                         <a href="https://www.facebook.com/hadrian.cone" target='_blank' rel="noopener noreferrer">
                             <div className="facebook" />
                         </a>
                         <a href="https://www.instagram.com/billycuneart/" target='_blank' rel="noopener noreferrer">
                             <div className="instagram" />
                         </a>
+                        </div>
                     </div>
                 </header>
 

@@ -39,9 +39,12 @@
     }
     .page-header {
       padding: 5px;
-      height: 70px;
+      height: 80px;
       flex-direction: row;
       justify-content: space-between;
+      @media (max-width: 450px){
+        height: 110px;
+      }
     }
     .main-nav-list {
       position: fixed;
@@ -71,4 +74,29 @@
   display: flex;
   justify-content: space-around;
   width: 13%;
+  @media (max-width: 780px){
+    flex-direction: column;
+    margin-top: 1%;
+    width: 30%;
+  }
+}
+
+.main-nav-social-wrapper{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  @media (max-width: 780px){
+    justify-content: space-around;
+    order: -1;
+    margin-top: 5px;
+  }
+  
+}
+
+.header-signature {
+  @media (max-width:450px){
+  margin-top: 28px;
+  height: 30px;
+  }
 }
