@@ -109,6 +109,9 @@ export default class Contact extends React.Component{
                     {/* <p className="bike-icon">{bike}</p> */}
                     <Divider />
                     <div className="boxes">
+
+                        <div className='left-wrapper'>
+
                         <div className="aboutText">
                             <p>
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores beatae doloremque eius eos eveniet excepturi facilis fugit impedit labore molestias praesentium provident quasi quo, rem tempore voluptate. Magni, molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptates.
@@ -120,6 +123,50 @@ export default class Contact extends React.Component{
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum suscipit veniam. Aperiam doloremque labore quam recusandae tempora vero voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, voluptas!
                             </p>
                         </div>
+
+                        <table className='order-table'>
+                                <thead>
+                                <tr>
+                                    <th>Item</th>
+                                    <th>Price</th>
+                                    <th>Delivery EU</th>
+                                    <th>Delivery USA</th>
+                                    <th>Delivery World</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>A4 Print</td>
+                                    <td>€15</td>
+                                    <td rowspan="6">€15 (2-3 days delivery)</td>
+                                    <td rowspan="6">€20 (5-7 days delivery)</td>
+                                    <td rowspan="6">€15-€30 (5-10 days delivery)</td>
+                                </tr>
+                                <tr>
+                                    <td>A4 Original</td>
+                                    <td>€75</td>
+                                </tr>
+                                <tr>
+                                    <td>A3 Print</td>
+                                    <td>€30</td>
+                                </tr>
+                                <tr>
+                                    <td>A3 Original</td>
+                                    <td>€100</td>
+                                </tr>
+                                <tr>
+                                    <td>Set of 10 A3 Prints</td>
+                                    <td>€70</td>
+                                </tr>
+                                <tr>
+                                    <td>A4 custom drawing</td>
+                                    <td>100€</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
                         <div className="contactForm">
                             <h3>GET IN TOUCH!</h3>
                             <div className='messageSend'>

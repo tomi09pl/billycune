@@ -1,0 +1,57 @@
+@import "settings/colors";
+@import "settings/fonts";
+
+.makingOf {
+    background-color: $color3;
+}
+
+.makingOf-header {
+    color:  $color10;
+    font-weight: 300;
+    letter-spacing: 0.075em;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
+    margin-bottom: 0.1em;
+    margin-top: 0;
+}
+
+.makingOf-subheader {
+    color:  $color10;
+    font-weight: 300;
+    letter-spacing: 0.075em;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 5px black;
+    margin-bottom: 0.1em;
+}
+
+.wrapper-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+
+.makingOf-icon-wrapper {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+}
+
+.makingOf-yt-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.makingOg-yt-frame {
+    border: 1px solid $color4;
+    margin: 1em;
+    width: 40em; height: 25em;
+    
+}
