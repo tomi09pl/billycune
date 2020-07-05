@@ -63,6 +63,24 @@
   
 }
 
+.retro{
+  width: 400px; height: 400px;
+  background: url('../assets/portfolioRetro_icon.jpg');
+
+  &::before {
+    background-color: $color6;
+    color: $color4;
+    content: 'RETRO EDITION';
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    padding:1.5% 1.5%;
+    width: 100%;
+  }
+}
+
 .hidden {
   display: none;
   opacity: 0;

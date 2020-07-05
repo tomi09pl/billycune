@@ -2,9 +2,6 @@ import React from 'react';
 import ImageGallery from 'react-image-gallery';
 
 //=======images for black gallery=======//
-
-
-
 import blk1 from '../assets/black/FirstSingle.jpg';
 import blk2 from '../assets/black/AtmosfericTwin.jpg';
 import blk3 from '../assets/black/F-Head.jpg';
@@ -35,6 +32,25 @@ import cls10 from '../assets/classic/Shovelhead.jpg';
 import cls11 from '../assets/classic/Evolution.jpg';
 import cls12 from '../assets/classic/TwinCam.jpg';
 import cls13 from '../assets/classic/m8.jpg';
+//=======================================//
+
+//=======images for retro gallery=======//
+import rtr1 from '../assets/retro/1903_First_Single.jpg';
+import rtr2 from '../assets/retro/1909_Atmosferic_Twin.jpg';
+import rtr3 from '../assets/retro/1911_F-Head.jpg';
+import rtr4 from '../assets/retro/1929_Flathead.jpg';
+import rtr5 from '../assets/retro//1929_Flathead_ver_2.jpg';
+import rtr6 from '../assets/retro/1936_Knucklehead.jpg';
+import rtr7 from '../assets/retro/1936_Knucklehead_ver_2.jpg';
+import rtr8 from '../assets/retro/1948_Panhead.jpg';
+import rtr9 from '../assets/retro/1957_Ironhead.jpg';
+import rtr10 from '../assets/retro/1966_Generator_Shovelhead.jpg';
+import rtr11 from '../assets/retro/1966_Shovelhead.jpg';
+import rtr12 from '../assets/retro/1984_Evolution.jpg';
+import rtr13 from '../assets/retro/1984_Evolution_ver_2.jpg';
+import rtr14 from '../assets/retro/1999_Twin_Cam.jpg';
+import rtr15 from '../assets/retro/2017_Milwaukee-8.jpg';
+import rtr16 from '../assets/retro/2017_Milwaukee-8_114.jpg';
 //=======================================//
 
 import {Link} from "react-scroll";
@@ -108,7 +124,7 @@ const black = [
     },
     {
         original: blk14,
-        description: 'Milwaukee 8 2017',
+        description: 'Milwaukee-8 2017',
         thumbnail: blk14,
     }
 
@@ -177,8 +193,91 @@ const classic = [
     },
     {
         original: cls13,
-        description: 'Milwaukee 8',
+        description: 'Milwaukee-8',
         thumbnail: cls13,
+    }
+];
+
+const retro = [
+    {
+        original: rtr1,
+        description: 'First Single',
+        thumbnail: rtr1,
+    },
+    {
+        original: rtr2,
+        description: 'Atmosferic Twin',
+        thumbnail: rtr2,
+    },
+    {
+        original: rtr3,
+        description: 'F-Head',
+        thumbnail: rtr3,
+    },
+    {
+        original: rtr4,
+        description: 'Flathead',
+        thumbnail: rtr4,
+    },
+    {
+        original: rtr5,
+        description: 'Flathead Ver. 2',
+        thumbnail: rtr5,
+    },
+    {
+        original: rtr6,
+        description: 'Knucklehead',
+        thumbnail: rtr6,
+    },
+    {
+        original: rtr7,
+        description: 'Knucklehead Ver. 2',
+        thumbnail: rtr7,
+    },
+    {
+        original: rtr8,
+        description: 'Panhead',
+        thumbnail: rtr8,
+    },
+    {
+        original: rtr9,
+        description: 'Ironhead',
+        thumbnail: rtr9,
+    },
+    {
+        original: rtr10,
+        description: 'Generator Shovelhead',
+        thumbnail: rtr10,
+    },
+    {
+        original: rtr11,
+        description: 'Shovelhead',
+        thumbnail: rtr11,
+    },
+    {
+        original: rtr12,
+        description: 'Evolution',
+        thumbnail: rtr12,
+    },
+    {
+        original: rtr13,
+        description: 'Evolution Ver. 2',
+        thumbnail: rtr13,
+    },
+    {
+        original: rtr14,
+        description: 'Twin Cam',
+        thumbnail: rtr14,
+    },
+    {
+        original: rtr15,
+        description: 'Milwaukee-8',
+        thumbnail: rtr15,
+    },
+    {
+        original: rtr16,
+        description: 'Milwaukee-8 114',
+        thumbnail: rtr16,
     }
 ];
 
@@ -228,6 +327,17 @@ export default class Portfolio extends React.Component {
                         className="portfolio-nav-list-link black"
                         onClick={this.clickHandler}
                     ></Link>
+                    <Link
+                        activeClass="active"
+                        data-index={3}
+                        to="breakPoint"
+                        spy={true}
+                        smooth={true}
+                        offset={30}
+                        duration= {600}
+                        className="portfolio-nav-list-link retro"
+                        onClick={this.clickHandler}
+                    ></Link>
                 </ul>
 
                 <div className='breakPoint'></div>
@@ -238,6 +348,9 @@ export default class Portfolio extends React.Component {
                     </div>
                     <div className={gallery==='2' ? "black-gallery" : "hidden"}>
                         <ImageGallery {...properties} items={black} />
+                    </div>
+                    <div className={gallery==='3' ? "retro-gallery" : "hidden"}>
+                        <ImageGallery {...properties} items={retro} />
                     </div>
 
                 </div>
