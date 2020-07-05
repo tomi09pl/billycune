@@ -49,9 +49,17 @@
 
 .firstRow {
   margin-top: 50px;
+  @media (max-width: 550px){
+    flex-direction: column;
+    margin-top: 10px;
+  }
 }
 .secondRow {
   margin-bottom: 50px;
+  @media (max-width: 550px){
+    flex-direction: column;
+    margin-top: 10px;
+  }
 }
 
 .responsive {
@@ -60,17 +68,20 @@
   padding: 0 6px;
   float: left;
   width: 24.99999%;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-    margin: 6px 0;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
+  @media (max-width: 550px){
     width: 100%;
   }
 }
+
+//@media only screen and (max-width: 700px) {
+ // .responsive {
+ //   width: 49.99999%;
+ //   margin: 6px 0;
+//  }
+//}
+
+//@media only screen and (max-width: 550px) {
+  //.responsive {
+  //  width: 100%;
+  //}
+//}
