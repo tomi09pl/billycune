@@ -82,7 +82,7 @@ export default class About extends React.Component {
                                     smooth={true}
                                     offset={-70}
                                     duration= {900}
-                                    className="">
+                                    className="about-order-button">
                                         ORDER ART
                                         <span></span>
                                         <span></span>
