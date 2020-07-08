@@ -3,12 +3,21 @@
 
 
 .home-contact-container {
-  height: 80vh;
+  height: 700px;
   background-color: $color3;
-
+  @media (max-width: 1300px){
+    height: 1150px;
+  }
+  @media (max-width: 830px){
+    height: 1350px;
+  }
+  @media (max-width: 550px){
+    height: 1500px;
+  }
   & .divider-wrapper {
     margin-bottom: 1.5em;
-  }
+    }
+    
 }
 
 .home-contact-container h1 {
@@ -30,10 +39,22 @@
   width: calc(100vw - (100vw - 100%));
 }
 
-.howToOrder .boxes {
+.howToOrder {
   display: flex;
   height: 100%;
 }
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  //  justify-content: center;
+ //   allign-items: center;
+  }
+}
+
 
 .aboutText {
   width: 90%;
@@ -46,7 +67,7 @@
 
 .contactForm {
   width: 65%;
-  height: 41vh;
+  height: 330px;
   // margin-left: 5%;
   margin-right: 5%;
   padding-top: 10px;
@@ -61,6 +82,11 @@
   // box-shadow: 10px 10px 5px #aaaaaa;
   // box-shadow: 0 0 5px $color2, 0 0 20px $color2, 0 0 45px $color2;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  @media (max-width: 1300px){
+    height: 360px;
+    width: 380px;
+    margin: 0;
+  }
 }
 
 .contactForm:hover {
@@ -69,7 +95,7 @@
 
 .formBox {
   display: flex;
-  width: 100%;
+  width: 300px;
 }
 
 
@@ -77,6 +103,7 @@
   width: 40%;
   padding: 5%;
   padding-left: 8%;
+  
 }
 
 .formBox .formRight {
