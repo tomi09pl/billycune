@@ -437,26 +437,24 @@ export default class Portfolio extends React.Component {
         this.setState({clickedGallery: e.target.dataset.index})
     }
 
+    getGalleryArr = () => {
+       
+        // debugger;
+        if (this.state.clickedGallery==='1'){
+            return classic
+        } else if (this.state.clickedGallery==='2') {
+            return black
+        } else if (this.state.clickedGallery==='3') {
+            return retro
+        } else if (this.state.clickedGallery==='4') {
+            return bikes
+        }
+        return [];
+    }
+
     render() {
 
         const gallery = this.state.clickedGallery;
-
-        let renderArr = [];
-        console.log(gallery);
-
-        if (gallery===1){
-            console.log('step1: '+ gallery)
-            renderArr = classic
-        } else if (gallery===2) {
-            console.log('step2: '+ gallery)
-            renderArr = black
-        } else if (gallery===3) {
-            console.log('step3: '+ gallery)
-            renderArr = retro
-        } else if (gallery===4) {
-            console.log('step4: '+ gallery)
-            renderArr = bikes
-        }
 
         return (
             <div>
@@ -511,8 +509,7 @@ export default class Portfolio extends React.Component {
 
                 <div className="portfolio-container">
                     <div className={gallery===null ? "hidden" : "classic-gallery"}>
-                        <ImageGallery {...properties} items={renderArr} />
-                        {console.log(renderArr)}
+                        <ImageGallery {...properties} items={this.getGalleryArr()} />
                     </div>
                 </div>
 
