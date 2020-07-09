@@ -114,13 +114,13 @@ export default class Contact extends React.Component{
 
                         <div className="aboutText">
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores beatae doloremque eius eos eveniet excepturi facilis fugit impedit labore molestias praesentium provident quasi quo, rem tempore voluptate. Magni, molestias! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, voluptates.
+                            To order Art or Set of Arts please get in touch with me using contact form on this website.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis laudantium, ut. Ab nesciunt obcaecati officiis tempora veritatis vero! Fuga, inventore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, molestiae! Lorem ipsum dolor sit amet.
+                            We are using PayPal as a secure mean of payment. After receiving your details needed for shipping and when payment is cleared I email you with tracking number for order.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus eum suscipit veniam. Aperiam doloremque labore quam recusandae tempora vero voluptatibus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, voluptas!
+                            When making PayPal payment please include in comment information about your address and phone number. These details are necessary to order a courier delivery.
                             </p>
                         </div>
 
@@ -137,31 +137,39 @@ export default class Contact extends React.Component{
                                 <tbody>
                                 <tr>
                                     <td>A4 Print</td>
-                                    <td>€15</td>
-                                    <td rowspan="6">€15 (2-3 days delivery)</td>
-                                    <td rowspan="6">€20 (5-7 days delivery)</td>
-                                    <td rowspan="6">€15-€30 (5-10 days delivery)</td>
+                                    <td>€10</td>
+                                    <td className='centeredCell' rowspan="8">€10 - €20<br/>(2-6 days GLS / DPD)</td>
+                                    <td className='centeredCell' rowspan="8">$30<br/>(5-7 days FedEx)</td>
+                                    <td className='centeredCell' rowspan="8">€30 - €50<br/>(contact me for details)</td>
+                                </tr>
+                                <tr>
+                                    <td>A4 Set of choice - 12 Prints</td>
+                                    <td>€50</td>
                                 </tr>
                                 <tr>
                                     <td>A4 Original</td>
-                                    <td>€75</td>
+                                    <td>€150</td>
                                 </tr>
                                 <tr>
                                     <td>A3 Print</td>
-                                    <td>€30</td>
+                                    <td>€15</td>
                                 </tr>
                                 <tr>
                                     <td>A3 Original</td>
-                                    <td>€100</td>
+                                    <td>€250</td>
                                 </tr>
                                 <tr>
-                                    <td>Set of 10 A3 Prints</td>
-                                    <td>€70</td>
+                                    <td>A3 Black Edition Set - 12 Prints</td>
+                                    <td>€80</td>
                                 </tr>
                                 <tr>
-                                    <td>A4 custom drawing</td>
-                                    <td>100€</td>
+                                    <td>A3 Retro Edition Set - 12 Prints</td>
+                                    <td>€80</td>
                                 </tr>
+                                <tr>
+                                    <td>A3 White Edition Set - 12 Prints</td>
+                                    <td>€80</td>
+                                </tr>                                
                                 </tbody>
                             </table>
 
@@ -170,8 +178,8 @@ export default class Contact extends React.Component{
                         <div className="contactForm">
                             <h3>GET IN TOUCH!</h3>
                             <div className='messageSend'>
-                                {this.state.messageSend && <p className='send'>Wiadomość została wysłana!<br/>Wkrótce się skonatktujemy.</p>}
-                                {this.state.fetchError && <p className='error'>Bład serwera!</p>}
+                                {this.state.messageSend && <p className='send'>Thank you! Message sent.<br/>We'll get back to you soon.</p>}
+                                {this.state.fetchError && <p className='error'>Message not sent!</p>}
                                 {(!this.state.messageSend && !this.state.fetchError) && <p/>}
                             </div>
                             <form onSubmit={this.handleSubmit}>
@@ -179,24 +187,24 @@ export default class Contact extends React.Component{
                                     <div className="formLeft">
                                         <label>
                                             <p className="title">Name:</p>
-                                            <input className="formUp" type="text" name="name" placeholder="Your name..." onChange={this.handleChange} />
+                                            <input className="formUp" type="text" name="name" placeholder onChange={this.handleChange} />
                                             {(this.state.nameError)?<span>Incorrect name!</span>:<span className='correct'/>}
                                         </label>
                                         <label>
                                             <p className="title">Email:</p>
-                                            <input className="formUp" type="text" name="email" placeholder="your@email.com" onChange={this.handleChange} />
+                                            <input className="formUp" type="text" name="email" placeholder onChange={this.handleChange} />
                                             {(this.state.emailError)?<span>Incorrect email!</span>:<span className='correct'/>}
                                         </label>
                                         <label>
                                             <p className="title">Art name</p>
                                             <input className="formUp" type="text" name="id" placeholder="Type in one or more..." onChange={this.handleChange} />
-                                            {(this.state.emailError)?<span>Incorrect ID!</span>:<span className='correct'/>}
+                                            {(this.state.emailError)?<span>Art name too short!</span>:<span className='correct'/>}
                                         </label>
                                     </div>
                                     <div className="formRight">
                                         <label className="formBottom">
                                             <p className="title"> Your message:</p>
-                                            <textarea className="formMessage" name="message" placeholder="Type your message here..."onChange={this.handleChange} />
+                                            <textarea className="formMessage" name="message" placeholder onChange={this.handleChange} />
                                             {(this.state.messageError)?<span>Message too short!</span>:<span className='correct'/>}
                                             <div className="check1">
                                                 <input type="checkbox" id="terms" name="terms" value="terms"/>

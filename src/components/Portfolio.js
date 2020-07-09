@@ -441,6 +441,23 @@ export default class Portfolio extends React.Component {
 
         const gallery = this.state.clickedGallery;
 
+        let renderArr = [];
+        console.log(gallery);
+
+        if (gallery===1){
+            console.log('step1: '+ gallery)
+            renderArr = classic
+        } else if (gallery===2) {
+            console.log('step2: '+ gallery)
+            renderArr = black
+        } else if (gallery===3) {
+            console.log('step3: '+ gallery)
+            renderArr = retro
+        } else if (gallery===4) {
+            console.log('step4: '+ gallery)
+            renderArr = bikes
+        }
+
         return (
             <div>
                 <ul className={gallery != null ? "portfolio-nav-list" : "portfolio-nav-list background"}>
@@ -493,6 +510,13 @@ export default class Portfolio extends React.Component {
                 <div className='breakPoint'></div>
 
                 <div className="portfolio-container">
+                    <div className={gallery===null ? "hidden" : "classic-gallery"}>
+                        <ImageGallery {...properties} items={renderArr} />
+                        {console.log(renderArr)}
+                    </div>
+                </div>
+
+                {/* <div className="portfolio-container">
                     <div className={gallery==='1' ? "classic-gallery" : "hidden"}>
                         <ImageGallery {...properties} items={classic} />
                     </div>
@@ -506,7 +530,7 @@ export default class Portfolio extends React.Component {
                         <ImageGallery {...properties} items={bikes} />
                     </div>
 
-                </div>
+                </div> */}
 
                 
 
