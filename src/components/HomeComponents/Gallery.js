@@ -86,9 +86,9 @@ export default class Gallery extends React.Component {
                     <div className="responsive">
                         <div className="gallery">
                             <a href={img5} data-attribute="SRL">
-                                <img src={img5} alt="M8" width="600" height="400"/>
+                                <img src={img5} alt="Milwaukee-8" width="600" height="400"/>
                             </a>
-                            <div className="desc">M8</div>
+                            <div className="desc">Milwaukee-8</div>
                         </div>
                     </div>
 

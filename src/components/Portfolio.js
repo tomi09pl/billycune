@@ -437,6 +437,21 @@ export default class Portfolio extends React.Component {
         this.setState({clickedGallery: e.target.dataset.index})
     }
 
+    getGalleryArr = () => {
+       
+        // debugger;
+        if (this.state.clickedGallery==='1'){
+            return classic
+        } else if (this.state.clickedGallery==='2') {
+            return black
+        } else if (this.state.clickedGallery==='3') {
+            return retro
+        } else if (this.state.clickedGallery==='4') {
+            return bikes
+        }
+        return [];
+    }
+
     render() {
 
         const gallery = this.state.clickedGallery;
@@ -493,6 +508,12 @@ export default class Portfolio extends React.Component {
                 <div className='breakPoint'></div>
 
                 <div className="portfolio-container">
+                    <div className={gallery===null ? "hidden" : "classic-gallery"}>
+                        <ImageGallery {...properties} items={this.getGalleryArr()} />
+                    </div>
+                </div>
+
+                {/* <div className="portfolio-container">
                     <div className={gallery==='1' ? "classic-gallery" : "hidden"}>
                         <ImageGallery {...properties} items={classic} />
                     </div>
@@ -506,7 +527,7 @@ export default class Portfolio extends React.Component {
                         <ImageGallery {...properties} items={bikes} />
                     </div>
 
-                </div>
+                </div> */}
 
                 
 

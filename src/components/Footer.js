@@ -12,7 +12,7 @@ export default class Footer extends React.Component {
                     <div className="box1">
                         <div className="socialIcons">
                             <h3> Talk to me on: </h3>
-                            <a href="https://www.facebook.com/hadrian.cone" target='_blank' rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/BillyCune/" target='_blank' rel="noopener noreferrer">
                                 <div className="facebook"/>
                             </a>
                             <a href="https://www.instagram.com/billycuneart/" target='_blank' rel="noopener noreferrer">
