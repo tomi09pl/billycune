@@ -1,6 +1,8 @@
 import React from 'react';
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import signature from './assets/billyCuneSignature.gif';
+import CookieConsent from "react-cookie-consent";
+
 
 import Home from "./components/Home";
 import Portfolio from "./components/Portfolio";
@@ -17,7 +19,7 @@ function App() {
             <Router>
 
                 <header className="page-header">
-
+                <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
                     <div className="main-nav">
                         <Navigation />
                         <Button />
