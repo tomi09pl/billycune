@@ -12,7 +12,10 @@ h3 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 70vh;
+    @media (max-width: 500px){
+      height: 50vh;
+    }
 }
 
 .each-slide span {
@@ -49,8 +52,11 @@ h3 {
 
 .home-slide-show-container {
   background-color: $color1;
-  height: 100vh;
+  height: 70vh;
   color: $color4;
+    @media (max-width: 500px){
+      height: 50vh;
+    }
 }
 
 .react-slideshow-container + div.indicators{

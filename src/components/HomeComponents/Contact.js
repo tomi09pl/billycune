@@ -7,6 +7,7 @@ export default class Contact extends React.Component{
         email:'',
         id: '',
         message:'',
+        // news:'',
 
         nameError:false,
         emailError:false,
@@ -206,10 +207,10 @@ export default class Contact extends React.Component{
                                             <p className="title"> Your message:</p>
                                             <textarea className="formMessage" name="message" placeholder onChange={this.handleChange} />
                                             {(this.state.messageError)?<span>Message too short!</span>:<span className='correct'/>}
-                                            <div className="check1">
+                                            {/* <div className="check1">
                                                 <input type="checkbox" id="terms" name="terms" value="terms"/>
                                                 <label htmlFor="terms"> I agree with terms and conditions</label>
-                                            </div>
+                                            </div> */}
                                             <div className="check2">
                                                 <input type="checkbox" id="news" name="news" value="news"/>
                                                 <label htmlFor="news"> I want to receive news from website</label>
