@@ -4,12 +4,12 @@ import Divider from '../Divider';
 
 import img1 from '../../assets/black/AtmosfericTwin.jpg';
 import img2 from '../../assets/black/Evolution.jpg';
-import img3 from '../../assets/black/F-Head.jpg';
-import img4 from '../../assets/black/GeneratorShovelhead.jpg';
+import img3 from '../../assets/classic_title/2017_Milwaukee-Eight_114.jpg';
+import img4 from '../../assets/classic_title/1966_Generator_Shovelhead.jpg';
 import img5 from '../../assets/classic/m8.jpg';
 import img6 from '../../assets/classic/Knucklehead.jpg';
-import img7 from '../../assets/classic/PanheadS_S.jpg';
-import img8 from '../../assets/classic/TwinCam.jpg';
+import img7 from '../../assets/retro/1948_Panhead.jpg';
+import img8 from '../../assets/retro/1999_Twin_Cam.jpg';
 
 
 export default class Gallery extends React.Component {
@@ -66,9 +66,9 @@ export default class Gallery extends React.Component {
                     <div className="responsive">
                         <div className="gallery">
                             <a href={img3} data-attribute="SRL">
-                                <img src={img3} alt="F-Head" width="600" height="400"/>
+                                <img src={img3} alt="Milwaukee-Eight 114" width="600" height="400"/>
                             </a>
-                            <div className="desc">F-Head</div>
+                            <div className="desc">Milwaukee-Eight 114</div>
                         </div>
                     </div>
 
@@ -86,9 +86,9 @@ export default class Gallery extends React.Component {
                     <div className="responsive">
                         <div className="gallery">
                             <a href={img5} data-attribute="SRL">
-                                <img src={img5} alt="Milwaukee-8" width="600" height="400"/>
+                                <img src={img5} alt="Milwaukee-Eight" width="600" height="400"/>
                             </a>
-                            <div className="desc">Milwaukee-8</div>
+                            <div className="desc">Milwaukee-Eight</div>
                         </div>
                     </div>
 
@@ -104,9 +104,9 @@ export default class Gallery extends React.Component {
                     <div className="responsive">
                         <div className="gallery">
                             <a href={img7} data-attribute="SRL">
-                                <img src={img7} alt="Panhead S&S" width="600" height="400"/>
+                                <img src={img7} alt="Panhead" width="600" height="400"/>
                             </a>
-                            <div className="desc">Panhead S&S</div>
+                            <div className="desc">Panhead</div>
                         </div>
                     </div>
 

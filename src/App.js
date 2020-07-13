@@ -19,7 +19,7 @@ function App() {
             <Router>
 
                 <header className="page-header">
-                <CookieConsent>This website uses cookies to enhance the user experience.</CookieConsent>
+                <CookieConsent buttonText='OK'>This website uses cookies to enhance user experience.</CookieConsent>
                     <div className="main-nav">
                         <Navigation />
                         <Button />
@@ -32,6 +32,9 @@ function App() {
                         </a>
                         <a href="https://www.instagram.com/billycuneart/" target='_blank' rel="noopener noreferrer">
                             <div className="instagram" />
+                        </a>
+                        <a href="https://www.deviantart.com/cune" target='_blank' rel="noopener noreferrer">
+                            <div className="deviantart"/>
                         </a>
                         </div>
                     </div>

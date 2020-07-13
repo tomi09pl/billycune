@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Slide } from 'react-slideshow-image';
-import img0 from '../../assets/_MG_4330.jpg'
+import img0 from '../../assets/_MG_4330_new.jpg'
 import img1 from '../../assets/_MG_4397.jpg'
 import img2 from '../../assets/_MG_4409.jpg'
 

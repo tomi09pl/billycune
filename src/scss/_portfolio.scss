@@ -45,13 +45,31 @@
   }
 }
 
+.classic-titled{
+  width: 400px; height: 400px;
+  background: url('../assets/portfolioClassicTitled.jpg');
+
+  &::before {
+    background-color: $color4;
+    color: $color6;
+    content: 'TITLED CLASSIC EDITION';
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    padding:1.5% 1.5%;
+    width: 100%;
+  }
+}
+
 .black{
   width: 400px; height: 400px;
   background: url('../assets/portfolioBlack_icon.jpg');
 
     &::before {
-      background-color: $color4;
-      color: $color6;
+      background-color: $color6;
+      color: $color4;
       content: 'BLACK EDITION';
       font-weight: 700;
       position: absolute;
@@ -69,8 +87,8 @@
   background: url('../assets/portfolioRetro_icon.jpg');
 
   &::before {
-    background-color: $color6;
-    color: $color4;
+    background-color: $color4;
+    color: $color6;
     content: 'RETRO EDITION';
     font-weight: 700;
     position: absolute;
@@ -87,9 +105,27 @@
   background: url('../assets/portfolioBikes_icon.jpg');
 
   &::before {
+    background-color: $color6;
+    color: $color4;
+    content: 'CUSTOM BIKES';
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+    padding:1.5% 1.5%;
+    width: 100%;
+  }
+}
+
+.others{
+  width: 400px; height: 400px;
+  background: url('../assets/portfolioOthers.jpg');
+
+  &::before {
     background-color: $color4;
     color: $color6;
-    content: 'CUSTOM BIKES';
+    content: 'OTHER ARTS';
     font-weight: 700;
     position: absolute;
     text-align: center;
