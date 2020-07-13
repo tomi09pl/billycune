@@ -32,7 +32,7 @@ import cls10 from '../assets/classic/Shovelhead.jpg';
 import cls11 from '../assets/classic/Evolution.jpg';
 import cls12 from '../assets/classic/TwinCam.jpg';
 import cls13 from '../assets/classic/m8.jpg';
-//=======================================//
+//==============classic with titles========//
 import cls14 from '../assets/classic_title/1903_First_Single.jpg';
 import cls15 from '../assets/classic_title/1909_Atmosferic-Twin.jpg';
 import cls16 from '../assets/classic_title/1911_F-Head.jpg';
@@ -77,6 +77,18 @@ import bike3 from '../assets/bikes/Sportster_48_black.jpg';
 import bike4 from '../assets/bikes/red_bike.jpg';
 import bike5 from '../assets/bikes/Springer_black.jpg';
 import bike6 from '../assets/bikes/Springer_classic.jpg';
+//=======================================//
+
+//=======images for others gallery=======//
+import oth1 from '../assets/others/forbidden_kiss.jpg';
+import oth2 from '../assets/others/zombie.jpg';
+import oth3 from '../assets/others/tyrant_pro.jpg';
+import oth4 from '../assets/others/the_chief.jpg';
+import oth5 from '../assets/others/hetzer_non_orton.jpg';
+import oth6 from '../assets/others/Jagdpanther.jpg';
+import oth7 from '../assets/others/PanzerkampfwagenIV.jpg';
+import oth8 from '../assets/others/StuGIIIG.jpg';
+import oth9 from '../assets/others/T-34.jpg';
 //=======================================//
 
 import {Link} from "react-scroll";
@@ -221,7 +233,11 @@ const classic = [
         original: cls13,
         description: 'Milwaukee-8',
         thumbnail: cls13,
-    },
+    }
+    
+];
+
+const classicTitled = [
     {
         original: cls14,
         description: '1903 First Single',
@@ -301,7 +317,7 @@ const classic = [
         original: cls29,
         description: '2017 Mailwaukee-Eight 114',
         thumbnail: cls29,
-    },
+    }
 ];
 
 const retro = [
@@ -420,6 +436,54 @@ const bikes = [
     }
 ]
 
+const others = [
+    {
+        original: oth1,
+        description:'Forbidden kiss',
+        thumbnail: oth1
+    },
+    {
+        original: oth2,
+        description:'Zombie',
+        thumbnail: oth2
+    },
+    {
+        original: oth3,
+        description:'Tyrant Pro',
+        thumbnail: oth3
+    },
+    {
+        original: oth4,
+        description:'The Chief',
+        thumbnail: oth4
+    },
+    {
+        original: oth5,
+        description:'Hetzer',
+        thumbnail: oth5
+    },
+    {
+        original: oth6,
+        description:'Jagdpanther',
+        thumbnail: oth6
+    },
+    {
+        original: oth7,
+        description:'Panzerkampfwagen IV',
+        thumbnail: oth7
+    },
+    {
+        original: oth8,
+        description:'StuG III G',
+        thumbnail: oth8
+    },
+    {
+        original: oth9,
+        description:'T-34',
+        thumbnail: oth9
+    }
+];
+
 const properties = {
     thumbnailPosition: "bottom",
 };
@@ -443,11 +507,15 @@ export default class Portfolio extends React.Component {
         if (this.state.clickedGallery==='1'){
             return classic
         } else if (this.state.clickedGallery==='2') {
-            return black
+            return classicTitled
         } else if (this.state.clickedGallery==='3') {
-            return retro
+            return black
         } else if (this.state.clickedGallery==='4') {
+            return retro
+        } else if (this.state.clickedGallery==='5') {
             return bikes
+        } else if (this.state.clickedGallery==='6') {
+            return others
         }
         return [];
     }
@@ -478,8 +546,8 @@ export default class Portfolio extends React.Component {
                         smooth={true}
                         offset={30}
                         duration= {600}
-                        className="portfolio-nav-list-link black"
-                        onClick={this.clickHandler}
+                        className="portfolio-nav-list-link classic-titled"
+                        onClick={e => this.clickHandler(e)}
                     ></Link>
                     <Link
                         activeClass="active"
@@ -489,7 +557,7 @@ export default class Portfolio extends React.Component {
                         smooth={true}
                         offset={30}
                         duration= {600}
-                        className="portfolio-nav-list-link retro"
+                        className="portfolio-nav-list-link black"
                         onClick={this.clickHandler}
                     ></Link>
                     <Link
@@ -500,7 +568,29 @@ export default class Portfolio extends React.Component {
                         smooth={true}
                         offset={30}
                         duration= {600}
+                        className="portfolio-nav-list-link retro"
+                        onClick={this.clickHandler}
+                    ></Link>
+                    <Link
+                        activeClass="active"
+                        data-index={5}
+                        to="breakPoint"
+                        spy={true}
+                        smooth={true}
+                        offset={30}
+                        duration= {600}
                         className="portfolio-nav-list-link bikes"
+                        onClick={this.clickHandler}
+                    ></Link>
+                    <Link
+                        activeClass="active"
+                        data-index={6}
+                        to="breakPoint"
+                        spy={true}
+                        smooth={true}
+                        offset={30}
+                        duration= {600}
+                        className="portfolio-nav-list-link others"
                         onClick={this.clickHandler}
                     ></Link>
                 </ul>
