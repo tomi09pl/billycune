@@ -2,14 +2,26 @@
 @import './settings/fonts';
 
 
+// body {
+//   background: $color2;
+//   font-family: $font-base;
+//   font-size: 16px;
+//   overflow-x: hidden;
+// }
+
+// zastąpiłem poniższym dla usunięcia paska
+
+html, 
 body {
-  background: $color2;
-  font-family: $font-base;
-  font-size: 16px;
-  overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background: $color2;
+    font-family: $font-base;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
 }
-
-
 
 @import "home";
 @import "navigationWithButton";
