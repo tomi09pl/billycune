@@ -83,6 +83,10 @@
     order: -1;
     margin-top: 5px;
   }
+  @media (max-width: 510px){
+    justify-content: center;
+    margin-left: -40%;
+  }
   
 }
 
