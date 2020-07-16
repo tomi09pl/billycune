@@ -69,20 +69,22 @@
         width: 100%;
         margin:0;
         padding: 0;
+        align-items: center;
+      }
+      @media (max-width: 1130px) {
+        width: 90%;
+        align-items: center;
       }
 
       .text {
         font-size: 20px;
         width: 90%; 
-        // height: 55%;
         text-align: justify;      
         @media (max-width: 500px) {
           font-size: 16px;
           max-width: 100%;
           width: 85%;
           align-self: center;
-          // margin:0;
-          // padding: 2px;
         }  
       }
 
@@ -201,8 +203,6 @@
 }
 
 .parallax-banner-layer-0 {
-  // top: -25% !important;
-  // bottom: -25% !important;
   margin-left: 4%;
   border: 1px solid $color3;
 }
