@@ -65,6 +65,10 @@
   //  justify-content: center;
    align-items: center;
   }
+  
+  @media (max-width: 650px){
+      max-width: 100%;
+    }
 }
 
 
@@ -274,4 +278,7 @@ form span.correct{
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 650px){
+    max-width: 100%;
+  }
 }

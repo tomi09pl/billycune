@@ -1,6 +1,18 @@
 @import "settings/colors";
 @import "settings/fonts";
 
+
+.divider {
+  @media (max-width: 350px){
+    width: 80%;
+  }}
+
+.responsive {
+  @media (max-width: 650px){
+    max-width: 95%;
+  }
+}
+
 .desc {
   //display: none;
   padding: 15px;
