@@ -16,17 +16,17 @@ ReactDOM.render(
 //====UNCOMMENT BEFORE BUILD====//
 //==============================//
 // This is to prevent right click on the website
-// if (document.addEventListener) {
-//   document.addEventListener('contextmenu', function(e) {
-//       // alert("You've tried to open context menu"); //here you draw your own menu
-//       e.preventDefault();
-//   }, false);
-// } else {
-//   document.attachEvent('oncontextmenu', function() {
-//       // alert("You've tried to open context menu");
-//       window.event.returnValue = false;
-//   });
-// }
+if (document.addEventListener) {
+  document.addEventListener('contextmenu', function(e) {
+      // alert("You've tried to open context menu"); //here you draw your own menu
+      e.preventDefault();
+  }, false);
+} else {
+  document.attachEvent('oncontextmenu', function() {
+      // alert("You've tried to open context menu");
+      window.event.returnValue = false;
+  });
+}
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
