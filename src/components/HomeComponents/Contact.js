@@ -80,12 +80,12 @@ export default class Contact extends React.Component{
             this.setState({emailError:false});
         }
 
-        if (!idRegex.test(id)){
-            this.setState({idError:true});
-            correctMessage=false;
-        }else{
-            this.setState({idError:false});
-        }
+        // if (!idRegex.test(id)){
+        //     this.setState({idError:true});
+        //     correctMessage=false;
+        // }else{
+        //     this.setState({idError:false});
+        // }
 
         if (!messageRegex.test(message)){
             this.setState({messageError:true});
@@ -199,7 +199,7 @@ export default class Contact extends React.Component{
                                         <label>
                                             <p className="title">Art name</p>
                                             <input className="formUp" type="text" name="id" placeholder="Type in one or more..." onChange={this.handleChange} />
-                                            {(this.state.emailError)?<span>Art name too short!</span>:<span className='correct'/>}
+                                            {(this.state.idError)?<span>Art name too short!</span>:<span className='correct'/>}
                                         </label>
                                     </div>
                                     <div className="formRight">
