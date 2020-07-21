@@ -91,6 +91,21 @@ import oth8 from '../assets/others/StuGIIIG.jpg';
 import oth9 from '../assets/others/T-34.jpg';
 //=======================================//
 
+//=======images for customersCollections gallery=======//
+import cust1 from '../assets/fotki_klientow/1.jpg'
+import cust2 from '../assets/fotki_klientow/2.jpg'
+import cust3 from '../assets/fotki_klientow/3.jpg'
+import cust4 from '../assets/fotki_klientow/4.jpg'
+import cust5 from '../assets/fotki_klientow/5.jpg'
+import cust6 from '../assets/fotki_klientow/6.jpg'
+import cust7 from '../assets/fotki_klientow/7.jpg'
+import cust8 from '../assets/fotki_klientow/8.jpg'
+import cust9 from '../assets/fotki_klientow/9.jpg'
+import cust10 from '../assets/fotki_klientow/10.jpg'
+import cust11 from '../assets/fotki_klientow/11.jpg'
+import cust12 from '../assets/fotki_klientow/12.jpg'
+//====================================================//
+
 import {Link} from "react-scroll";
 
 
@@ -484,6 +499,57 @@ const others = [
     }
 ];
 
+const customersCollections = [
+    {
+        original: cust1,
+        thumbnail: cust1
+    },
+    {
+        original: cust2,
+        thumbnail: cust2
+    },
+    {
+        original: cust3,
+        thumbnail: cust3
+    },
+    {
+        original: cust4,
+        thumbnail: cust4
+    },
+    {
+        original: cust5,
+        thumbnail: cust5
+    },
+    {
+        original: cust6,
+        thumbnail: cust6
+    },
+    {
+        original: cust7,
+        thumbnail: cust7
+    },
+    {
+        original: cust8,
+        thumbnail: cust8
+    },
+    {
+        original: cust9,
+        thumbnail: cust9
+    },
+    {
+        original: cust10,
+        thumbnail: cust10
+    },
+    {
+        original: cust11,
+        thumbnail: cust11
+    },
+    {
+        original: cust12,
+        thumbnail: cust12
+    },
+];
+
 const properties = {
     thumbnailPosition: "bottom",
 };
@@ -516,7 +582,9 @@ export default class Portfolio extends React.Component {
             return bikes
         } else if (this.state.clickedGallery==='6') {
             return others
-        }
+        } else if (this.state.clickedGallery==='7') {
+            return customersCollections
+        }        
         return [];
     }
 
@@ -591,6 +659,17 @@ export default class Portfolio extends React.Component {
                         offset={30}
                         duration= {600}
                         className="portfolio-nav-list-link others"
+                        onClick={this.clickHandler}
+                    ></Link>
+                    <Link
+                        activeClass="active"
+                        data-index={7}
+                        to="breakPoint"
+                        spy={true}
+                        smooth={true}
+                        offset={30}
+                        duration= {600}
+                        className="portfolio-nav-list-link customers"
                         onClick={this.clickHandler}
                     ></Link>
                 </ul>
