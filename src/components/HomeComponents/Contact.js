@@ -60,11 +60,11 @@ export default class Contact extends React.Component{
 
         let messageRegex=/^.{5,1000}$/;
 
-        let idRegex=/^.{5,200}$/;
+        // let idRegex=/^.{5,200}$/;
 
-        console.log('Regex mail',emailRegex.test(email));
-        console.log('Reg Name',nameRegex.test(name));
-        console.log("reg mess", messageRegex.test(message));
+        // console.log('Regex mail',emailRegex.test(email));
+        // console.log('Reg Name',nameRegex.test(name));
+        // console.log("reg mess", messageRegex.test(message));
 
         if (!nameRegex.test(name)){
             this.setState({nameError:true});
