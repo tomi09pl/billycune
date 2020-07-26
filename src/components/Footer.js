@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
                                 <a href="https://www.deviantart.com/cune" target='_blank' rel="noopener noreferrer">
                                     <div className="deviantart"/>
                                 </a>
-                                <a className='mail-footer' target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=youremail@gmail.com&body=my-text" rel="noopener noreferrer">
+                                <a className='mail-footer' target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@billycune.com&body=my-text" rel="noopener noreferrer">
                                 <AiOutlineMail size={28}/>
                                 </a>
                             </div>
@@ -30,7 +30,7 @@ export default class Footer extends React.Component {
                         </div>
                     </div>
                     <div className="box2">
-                        <p>billycune.pl || 2020</p>
+                        <p>billycune.com || 2020</p>
                     </div>
                     <div className="box3"/>
                 </div>
