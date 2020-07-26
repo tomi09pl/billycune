@@ -2,7 +2,7 @@
 
 Portfolio project for artist inspired by Harley Davidson motorbikes and heavy metal music.
 
-https://billycune.pl
+https://billycune.com
 
 ### Technologies used
 
