@@ -26,7 +26,7 @@ export default class Contact extends React.Component{
 
     sendForm=(name,email,id,message)=>{
         // fetch(`https://billycune.pl/index.php?name=${name}&email=${email}&message=${message}`, {
-        fetch("https://billycune.pl/index.php", {
+        fetch(`https://${window.location.host}/index.php`, {
             method: 'POST',
             headers: {
                 "Content-Type": "application/json"
