@@ -40,7 +40,6 @@
   text-transform: uppercase;
   text-align: center;
   text-shadow: 1px 1px 5px black;
-  // width: 350px;
   margin-bottom: 0.1em;
 }
 
@@ -61,8 +60,6 @@
   flex-direction: row;
   height: 100%;
   @media (max-width: 1300px) {
-    flex-direction: column;
-  //  justify-content: center;
    align-items: center;
   }
   
@@ -94,15 +91,11 @@
   background-color: $color2;
   border-radius: 10px;
   color: $color4;
-  // opacity: 50%;
-  // box-shadow: 10px 10px 5px #aaaaaa;
-  // box-shadow: 0 0 5px $color2, 0 0 20px $color2, 0 0 45px $color2;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   @media (max-width: 1300px){
     height: 360px;
     width: 95vw;
     margin: 0;
-   // box-shadow: none;
   }
 }
 
@@ -141,12 +134,6 @@
   height: 100%;
 }
 
-// .bike-icon {
-//   width: 100px;
-//   height: 100px;
-//   background-color: white;
-// }
-
 .contactForm form {
   font-size: 15px;
   width: 100%;
@@ -181,7 +168,6 @@
   border-right: none;
   background: none;
   border-bottom: solid 1px black;
-  //width: 170px;
   margin-top: 0px;
   width: 100%;
 }
@@ -217,14 +203,7 @@
 }
 
 .messageSend {
-  // p{
-    //margin-top: 40px;
-    //height:50px;
-    //width: 300px;
-    //text-align: center;
-    //font-weight: bold;
-    //font-size: 15px;
-  // }
+
   p.send{
     color: green;
     margin: 4px -8px 0 0;
@@ -238,21 +217,17 @@ form span{
   display: block;
   font-size: 0.7rem;
   color: red;
-  //border-top: 1px solid red;
   width: 100%;
 }
 form span.correct{
   width:100%;
-  //border-top: 1px solid green;
 }
 
 .order-table {
   color: $color4;
-  // border: 1px solid $color10;
   border-collapse: collapse;
   border-radius: 10px;
   border-style: hidden;
-  // border-spacing: 0;
   box-shadow: 0 0 0 1px $color10;
   margin: 50px;
   @media (max-width: 680px){

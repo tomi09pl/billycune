@@ -69,7 +69,6 @@ export default class About extends React.Component {
                         </div>
 
                         <div className="buttons">
-                            {/* <div className='buttons-wrapper'> */}
                                 <NavLink onClick={e => this.changeClick(e)} exact to="/portfolio">
                                     <span></span>
                                     <span></span>
@@ -87,7 +86,6 @@ export default class About extends React.Component {
                                         <span></span>
                                         <span></span>
                                 </Link>
-                            {/* </div> */}
                         </div>
                     </div>
                 </div>

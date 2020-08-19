@@ -569,7 +569,6 @@ export default class Portfolio extends React.Component {
 
     getGalleryArr = () => {
        
-        // debugger;
         if (this.state.clickedGallery==='1'){
             return classic
         } else if (this.state.clickedGallery==='2') {
@@ -681,25 +680,6 @@ export default class Portfolio extends React.Component {
                         <ImageGallery {...properties} items={this.getGalleryArr()} />
                     </div>
                 </div>
-
-                {/* <div className="portfolio-container">
-                    <div className={gallery==='1' ? "classic-gallery" : "hidden"}>
-                        <ImageGallery {...properties} items={classic} />
-                    </div>
-                    <div className={gallery==='2' ? "black-gallery" : "hidden"}>
-                        <ImageGallery {...properties} items={black} />
-                    </div>
-                    <div className={gallery==='3' ? "retro-gallery" : "hidden"}>
-                        <ImageGallery {...properties} items={retro} />
-                    </div>
-                    <div className={gallery==='4' ? "bikes-gallery" : "hidden"}>
-                        <ImageGallery {...properties} items={bikes} />
-                    </div>
-
-                </div> */}
-
-                
-
             </div>
         )
     }

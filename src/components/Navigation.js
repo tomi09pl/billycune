@@ -11,7 +11,7 @@ export default class Navigation extends React.Component {
         menu.classList.remove('show');
         window.scrollTo(0, 0)
     }
-    //to do mobilki będzie powyżej--Darek
+
     render() {
         return (
             <>
@@ -19,7 +19,6 @@ export default class Navigation extends React.Component {
                     <li><NavLink activeStyle={activeStyle} exact to="/">Home</NavLink></li>
                     <li><NavLink activeStyle={activeStyle} to="/portfolio">Portfolio</NavLink></li>
                     <li><NavLink activeStyle={activeStyle} to="/makingof">Making Of</NavLink></li>
-                    {/* <li><NavLink activeStyle={activeStyle} to="/history">H-D engines</NavLink></li> */}
                 </ul>
             </>
         )

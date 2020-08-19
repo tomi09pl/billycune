@@ -7,7 +7,6 @@ export default class Contact extends React.Component{
         email:'',
         id: '',
         message:'',
-        // news:'',
 
         nameError:false,
         emailError:false,
@@ -25,7 +24,6 @@ export default class Contact extends React.Component{
     };
 
     sendForm=(name,email,id,message)=>{
-        // fetch(`https://billycune.pl/index.php?name=${name}&email=${email}&message=${message}`, {
         fetch(`https://${window.location.host}/index.php`, {
             method: 'POST',
             headers: {
@@ -60,12 +58,6 @@ export default class Contact extends React.Component{
 
         let messageRegex=/^.{5,1000}$/;
 
-        // let idRegex=/^.{5,200}$/;
-
-        // console.log('Regex mail',emailRegex.test(email));
-        // console.log('Reg Name',nameRegex.test(name));
-        // console.log("reg mess", messageRegex.test(message));
-
         if (!nameRegex.test(name)){
             this.setState({nameError:true});
             correctMessage=false;
@@ -79,13 +71,6 @@ export default class Contact extends React.Component{
         }else{
             this.setState({emailError:false});
         }
-
-        // if (!idRegex.test(id)){
-        //     this.setState({idError:true});
-        //     correctMessage=false;
-        // }else{
-        //     this.setState({idError:false});
-        // }
 
         if (!messageRegex.test(message)){
             this.setState({messageError:true});
@@ -107,7 +92,6 @@ export default class Contact extends React.Component{
             <div className="home-contact-container" id="contact">
                 <div className="howToOrder">
                     <h1>HOW TO ORDER ART</h1>
-                    {/* <p className="bike-icon">{bike}</p> */}
                     <Divider />
                     <div className="boxes">
 
@@ -207,10 +191,6 @@ export default class Contact extends React.Component{
                                             <p className="title"> Your message:</p>
                                             <textarea className="formMessage" name="message" placeholder onChange={this.handleChange} />
                                             {(this.state.messageError)?<span>Message too short!</span>:<span className='correct'/>}
-                                            {/* <div className="check1">
-                                                <input type="checkbox" id="terms" name="terms" value="terms"/>
-                                                <label htmlFor="terms"> I agree with terms and conditions</label>
-                                            </div> */}
                                             <div className="check2">
                                                 <input type="checkbox" id="news" name="news" value="news"/>
                                                 <label htmlFor="news"> I want to receive news from website</label>

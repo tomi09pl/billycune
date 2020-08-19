@@ -107,7 +107,6 @@ export default class MakingOf extends React.Component {
                 <h1 className='makingOf-subheader'>Heavy Metal Videos</h1>
                 <Divider/>
 
-                {/* <div className='wrapper-wrapper'> */}
                     <div className='makingOf-yt-wrapper'>
                         <iframe className='makingOg-yt-frame' title='Evo Retro Poster'
                         src="https://www.youtube.com/embed/pizxZPHpR9c">
@@ -125,7 +124,6 @@ export default class MakingOf extends React.Component {
                         src="https://www.youtube.com/embed/uX9nLr6jdnE">
                         </iframe> 
                     </div>
-                {/* </div> */}
 
 
                 {isOpen && (

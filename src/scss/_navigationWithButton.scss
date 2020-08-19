@@ -45,12 +45,11 @@
       left: -320px;
       width: 320px;
       height: 80%;
-      background: $color3; //darken($color, 10);
+      background: $color3;
       flex-direction: column;
       opacity: 0.93;
     }
     .main-nav-list.show {
-      //	transform: translate(100%);
       transform: translate(320px, 80px);
       .container {
         margin: 0 30px;
@@ -116,11 +115,10 @@
   margin-right: 22px;
 }
 .page-header {
-  // background: $color2;
   background: #4C5F67;
-background: -webkit-linear-gradient(top, #4C5F67, #FFFFFF00);
-background: -moz-linear-gradient(top, #4C5F67, #FFFFFF00);
-background: linear-gradient(to bottom, #4C5F67, #FFFFFF00);
+  background: -webkit-linear-gradient(top, #4C5F67, #FFFFFF00);
+  background: -moz-linear-gradient(top, #4C5F67, #FFFFFF00);
+  background: linear-gradient(to bottom, #4C5F67, #FFFFFF00);
   padding: 10px;
   display: flex;
   justify-content: space-between;

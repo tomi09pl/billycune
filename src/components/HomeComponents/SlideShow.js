@@ -6,8 +6,6 @@ import img1 from '../../assets/_MG_4397.jpg'
 import img2 from '../../assets/_MG_4409.jpg'
 
 
-// const slideImages = [img0, img1, img2];
-
 const slideImages = [
     {
         img: img0,
